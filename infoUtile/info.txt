@@ -1,5 +1,7 @@
-INSERT INTO utilisateur (nom,prenom,email,date_naissance,ville,code_postal,privilege)
-VALUES ('Miszczuk','Ivan','miszczuk.ivan@gmail.com',"2000-10-24",'Guipavas','29490','2')
+INSERT INTO utilisateur (identifiant,mdp,nom,prenom,email,date_naissance,ville,code_postal,privilege)
+VALUES ('loulou1','abricot','Le Nezeut','Elouann','mail.de.elouann@lenezet.fr',"0622-12-12",'Guipavas','29490','2')
+INSERT INTO utilisateur (identifiant,mdp,nom,prenom,email,date_naissance,ville,code_postal,privilege)
+VALUES ('imiszczu','kucful','Miszczuk','Ivan','miszczuk.ivan@gmail.com',"2000-10-24",'Guipavas','29490','2')
 CREATE TABLE utilisateur
 (
     id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
