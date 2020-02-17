@@ -1,0 +1,23 @@
+INSERT INTO utilisateur (nom,prenom,email,date_naissance,ville,code_postal,privilege)
+VALUES ('Miszczuk','Ivan','miszczuk.ivan@gmail.com',"2000-10-24",'Guipavas','29490','2')
+CREATE TABLE utilisateur
+(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(100),
+    prenom VARCHAR(100),
+    email VARCHAR(255),
+    date_naissance DATE,
+    ville VARCHAR(255),
+    code_postal VARCHAR(5),
+    privilege INT
+)
+
+CREATE TABLE article
+(
+    id INT PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    nom VARCHAR(500),
+    contenu varchar(20000),
+    date_creation DATE,
+    auteur INT,
+    FOREIGN KEY (auteur) REFERENCES utilisateur(id)
+)
