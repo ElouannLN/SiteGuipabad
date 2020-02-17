@@ -27,11 +27,6 @@ body
   height: 5vh;
 }
 
-.TestFloat
-{
-float: left;
-}
-
 .menuPC ul a li
 {
   display: flex;
