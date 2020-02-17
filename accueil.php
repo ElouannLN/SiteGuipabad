@@ -13,7 +13,7 @@
                                  - Plumy enfin dèrrière les barreaux ? <br/>
                                  - Le badminton, nouveau symbole du communisme.</p>
 
-        <p class="infosclubbref"> Où ? à la Salle de Keranna, à Guipavas ! <br/>
+        <p class="infosclubbref"> <img src="TrucDuGénieDuDruide.png" class="TestFloat" alt="TestFloat"/> Où ? à la Salle de Keranna, à Guipavas ! <br/>
                                  Quand ? Pour les jeunes, le mardi de 18H30 à 20H. <br/>
                                  Pour les Adultes, les mardis et jeudis de 20H30 à 22H30. <br/>
                                  Plus d'informations <a href="inscriptions.php">ici</a>.</p>
