@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : 127.0.0.1:3306
--- Généré le :  lun. 17 fév. 2020 à 19:24
+-- Généré le :  lun. 17 fév. 2020 à 22:14
 -- Version du serveur :  5.7.24
 -- Version de PHP :  7.2.14
 
@@ -48,6 +48,8 @@ CREATE TABLE IF NOT EXISTS `article` (
 DROP TABLE IF EXISTS `utilisateur`;
 CREATE TABLE IF NOT EXISTS `utilisateur` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
+  `identifiant` varchar(100) DEFAULT NULL,
+  `mdp` varchar(100) DEFAULT NULL,
   `nom` varchar(100) DEFAULT NULL,
   `prenom` varchar(100) DEFAULT NULL,
   `email` varchar(255) DEFAULT NULL,
@@ -62,9 +64,9 @@ CREATE TABLE IF NOT EXISTS `utilisateur` (
 -- Déchargement des données de la table `utilisateur`
 --
 
-INSERT INTO `utilisateur` (`id`, `nom`, `prenom`, `email`, `date_naissance`, `ville`, `code_postal`, `privilege`) VALUES
-(1, 'Miszczuk', 'Ivan', 'miszczuk.ivan@gmail.com', '2000-10-24', 'Guipavas', '29490', 2),
-(2, 'Le Nezeut', 'Elouann', 'mail.de.elouann@lenezet.fr', '0622-12-12', 'Guipavas', '29490', 2);
+INSERT INTO `utilisateur` (`id`, `identifiant`, `mdp`, `nom`, `prenom`, `email`, `date_naissance`, `ville`, `code_postal`, `privilege`) VALUES
+(1, 'imiszczu', 'kucful', 'Miszczuk', 'Ivan', 'miszczuk.ivan@gmail.com', '2000-10-24', 'Guipavas', '29490', 2),
+(2, 'loulou1', 'abricot', 'Le Nezeut', 'Elouann', 'mail.de.elouann@lenezet.fr', '0622-12-12', 'Guipavas', '29490', 2);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
