@@ -1,6 +1,6 @@
 body
 {
-  background:url(../image/Billet.png) fixed no-repeat top right,url(../image/PB.jpg);
+  background:url(../image/Billet.png) fixed no-repeat top left,url(../image/PB.jpg);
   padding:0;
   margin: 0;
 }
