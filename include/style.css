@@ -1,0 +1,48 @@
+body
+{
+  padding:0;
+  margin: 0;
+}
+
+.menu
+{
+  width: 100vw;
+}
+
+.menuPC
+{
+  width: 100%;
+}
+
+.menuPC ul
+{
+  width: 100%;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  border: 1px black solid;
+  height: 5vh;
+}
+
+.menuPC ul a li
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 30vw;
+  height: 100%;
+  background-color: #95caff;
+  border: 1px black solid;
+  padding: 0;
+  margin: 0;
+  transition: 2s;
+}
+
+.menuPC ul a li:hover
+{
+  background-color: #ff8473;
+}

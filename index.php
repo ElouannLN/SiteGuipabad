@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="include/style.css">
   </head>
   <body>
-
+    <?php include("include/menu.php"); ?>
 
 
     <script type="text/javascript" scr="include/script.js"></script>
