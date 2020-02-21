@@ -5,6 +5,48 @@ body
   margin: 0;
 }
 
+a:link {
+text-decoration: none;
+color:#000000;
+}
+
+a:visited {
+text-decoration: none;
+color:#000000;
+}
+
+.menuheader
+{
+ background-color: white;
+}
+
+.menuliens
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: white;
+  border-bottom: 3px blue solid;
+}
+
+.lienpresse, .lienaccueil, .liengalerie, .liencontacts, .lientournois, .lieninscription
+{
+  font-size: 1.5em;
+  text-decoration: none;
+  text-decoration-color: black;
+  transition: 2s;
+}
+
+
+
+
+
+
+
+
+
+
+
 .menu
 {
   width: 100vw;
