@@ -7,6 +7,7 @@
   <body>
 <div class="menuheader">
     <a class="logo" href="accueil.php"><img src="image/TrucDuGénieDuDruide.png" alt="Logo de Guipabad"/></a>
+    <a class="Connection" href="authentification.php"><img src="image/TrucDuGénieDuDruide.png" alt="Logo pour se connecter"></a>
 <span class="menuliens">
     <a class="lienaccueil" href="accueil.php"> <p>Accueil</p></a>
     <a class="lientournois" href="tournois.php"> <p>Tournois</p></a>
