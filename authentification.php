@@ -12,7 +12,7 @@
             <h1>Créer un compte</h1>
             <form class="formulaire" action="utilisateur.php" method="post">
               <label for="identifiantCreation">Entrez votre identifiant</label>
-              <input type="text" name="identifiant" id="identifiantCreation" required min="8">
+              <input type="text" name="identifiant" id="identifiantCreation" required min="5">
               <label for="mdpCreation">Entrez votre mot de passe :</label>
               <input type="password" name="mdp" id="mdpCreation" required min="8">
               <label for="nom">Entrez votre nom</label>
