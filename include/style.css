@@ -1,6 +1,7 @@
 body
 {
-
+ padding: 0px;
+ margin: 0px;
 }
 
 
@@ -29,6 +30,8 @@ color:#000000;
 {
  background-color: white;
  box-shadow: 0px 3px 2px grey;
+  padding: 0px;
+  margin: 0px;
 }
 .menuliens
 {
@@ -47,7 +50,13 @@ color:#000000;
   transition: 2s;
 }
 
-
+.lienpresse:hover
+{
+   width: 15%;
+   height: 10px;
+   padding: 20px;
+   background-color: blue;
+}
 
 
 
