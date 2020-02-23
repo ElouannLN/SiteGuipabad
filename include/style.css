@@ -52,6 +52,13 @@ color:#000000;
 
 .lienpresse:hover
 {
+<<<<<<< HEAD
+=======
+   width: 15%;
+   height: 10px;
+   padding: 20px;
+   background-color: blue;
+>>>>>>> 1efdbfb86badb7d52f230686f088cdba5100465c
 }
 
 
@@ -114,7 +121,7 @@ color:#000000;
   align-items: center;
   width: 100vw;
   height: 100vh;
-  perspective: 1000px;
+  perspective: 1500px;
 }
 
 .carte

@@ -10,13 +10,17 @@
       <div class="carte">
           <div class="recto">
             <h1>Créer un compte</h1>
-            <form class="formulaire" action="login.php" method="post">
+            <form class="formulaire" action="utilisateur.php" method="post">
               <label for="identifiantCreation">Entrez votre identifiant</label>
               <input type="text" name="identifiant" id="identifiantCreation">
               <label for="mdpCreation">Entrez votre mot de passe :</label>
               <input type="password" name="mdp" id="mdpCreation">
               <label for="mdpCreation2">Entrez votre mot de passe une nouvelle fois:</label>
               <input type="password" name="mdp" id="mdpCreation2">
+              <label for="nom">Entrez votre nom</label>
+              <input type="text" name="nom" id="nom">
+              <label for="prenom">Entrez votre prenom</label>
+              <input type="text" name="prenom" id="prenom">
               <input type="submit" value="Créer">
               <input type="reset" name="" value="Se connecter" class="btnConnexion">
             </form>
@@ -25,7 +29,7 @@
             <h1>Connexion</h1>
             <form class="formulaire" action="login.php" method="post">
               <label for="identifiant">Entrez votre identifiant</label>
-              <input type="text" name="identifiant" id="identifiant">
+              <input type="text" name="identifiant" id="identifiant" pattern="[:alnum:]">
               <label for="mdp">Entrez votre mot de passe :</label>
               <input type="password" name="mdp" value="" id="mdp">
               <input type="submit">
