@@ -12,15 +12,17 @@
             <h1>Créer un compte</h1>
             <form class="formulaire" action="utilisateur.php" method="post">
               <label for="identifiantCreation">Entrez votre identifiant</label>
-              <input type="text" name="identifiant" id="identifiantCreation">
+              <input type="text" name="identifiant" id="identifiantCreation" required min="8">
               <label for="mdpCreation">Entrez votre mot de passe :</label>
-              <input type="password" name="mdp" id="mdpCreation">
-              <label for="mdpCreation2">Entrez votre mot de passe une nouvelle fois:</label>
-              <input type="password" name="mdp" id="mdpCreation2">
+              <input type="password" name="mdp" id="mdpCreation" required min="8">
               <label for="nom">Entrez votre nom</label>
-              <input type="text" name="nom" id="nom">
+              <input type="text" name="nom" id="nom" required min="1">
               <label for="prenom">Entrez votre prenom</label>
-              <input type="text" name="prenom" id="prenom">
+              <input type="text" name="prenom" id="prenom" required min="1">
+              <label for="email">Entrez votre email</label>
+              <input type="email" name="email" id="email" required>
+              <label for="date">Entrez votre date de naissance</label>
+              <input type="date" name="date" id="date" required>
               <input type="submit" value="Créer">
               <input type="reset" name="" value="Se connecter" class="btnConnexion">
             </form>
@@ -29,7 +31,7 @@
             <h1>Connexion</h1>
             <form class="formulaire" action="login.php" method="post">
               <label for="identifiant">Entrez votre identifiant</label>
-              <input type="text" name="identifiant" id="identifiant" pattern="[:alnum:]">
+              <input type="text" name="identifiant" id="identifiant">
               <label for="mdp">Entrez votre mot de passe :</label>
               <input type="password" name="mdp" value="" id="mdp">
               <input type="submit">
