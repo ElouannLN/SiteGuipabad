@@ -2,87 +2,49 @@ body
 {
  padding: 0px;
  margin: 0px;
+ background-color: red;
 }
 
-.menuheader
+a
 {
- background-color: white;
- box-shadow: 0px 3px 2px grey;
-  padding: 0px;
-  margin: 0px;
-}
-.menuliens
-{
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  background-color: white;
-  border-bottom: 3px blue solid;
-}
-.lienpresse, .lienaccueil, .liengalerie, .liencontacts, .lientournois, .lieninscription
-{
-  font-size: 1.25em;
   text-decoration: none;
-  text-decoration-color: black;
-  background-size: 50px 50px;
-  transition: 2s;
-}
-
-.lienpresse:hover
-{
-  
+  color: black;
+  border: 1px black solid;
 }
 
 
-
-
-
-
-
-
+/*Menu*/
 
 .menu
 {
+  background-color: white;
+}
+
+.menufix
+{
+ width: 100vw;
+ height: 5vh;
+ background-color: white;
+ position: fixed;
+ display: flex;
+ justify-content: flex-start;
+ overflow: hidden;
+}
+
+.menul
+{
   width: 100vw;
-}
-
-.menuPC
-{
-  width: 100%;
-}
-
-.menuPC ul
-{
-  width: 100%;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  border: 1px black solid;
   height: 5vh;
-}
-
-.menuPC ul a li
-{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  width: 30vw;
-  height: 100%;
-  background-color: #95caff;
-  border: 1px black solid;
-  padding: 0;
-  margin: 0;
-  transition: 2s;
+  justify-content: space-around;
+  font-size: 1.5em;
+  margin-top: 5vh;
 }
 
-.menuPC ul a li:hover
-{
-  background-color: #ff8473;
-}
+
+
+
+
 
 .exeterieurcarte
 {
