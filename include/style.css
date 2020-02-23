@@ -20,28 +20,28 @@ a
   background-color: white;
 }
 
-.menudynam
+.menufix
 {
  width: 100vw;
- height
+ height: 5vh;
  background-color: white;
  position: fixed;
  display: flex;
- justify-content: flex-end;
-}
-
-.menulogo
-{
- display: flex;
  justify-content: flex-start;
+ overflow: hidden;
 }
 
-.menufix
+.menul
 {
+  width: 100vw;
+  height: 5vh;
   display: flex;
   justify-content: space-around;
   font-size: 1.5em;
+  margin-top: 5vh;
 }
+
+
 
 
 
