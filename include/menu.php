@@ -1,17 +1,16 @@
 <div class="menu">
 
   <div class="menufix">
-    <a href="accueil.php">
-      <img src="image/TrucDuGénieDuDruide.png" alt="Logo du site">
+    <a class="lienlogosite" href="accueil.php">
+      <img class="Logosite" src="image/Logosite.png" alt="Logo du site">
     </a>
-      <a href="authentification.php">
-        <img src="image/TrucDuGénieDuDruide.png" alt="Logo d'authentification">
-      </a>
-      */La croix ici*/
+        <a class="lienlogoconnexion" href="authentification.php">
+          <img class="LogoConnexion" src="image/LogoConnexion.png" alt="Logo d'authentification">
+        </a>
   </div>
 
   <div class="menul">
-    <a class="menufixprop" href="accueil.php">Acceuil</a>
+    <a class="menufixprop" href="accueil.php">Accueil</a>
     <a class="menufixprop" href="tournois.php">Tournois</a>
     <a class="menufixprop" href="contacts.php">Contacts</a>
     <a class="menufixprop" href="inscriptions.php">Inscriptions</a>
