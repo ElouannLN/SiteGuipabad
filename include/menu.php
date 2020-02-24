@@ -1,12 +1,19 @@
 <div class="menu">
 
   <div class="menufix">
+
     <a class="lienlogosite" href="accueil.php">
       <img class="Logosite" src="image/Logosite.png" alt="Logo du site">
     </a>
-        <a class="lienlogoconnexion" href="authentification.php">
-          <img class="LogoConnexion" src="image/LogoConnexion.png" alt="Logo d'authentification">
-        </a>
+
+    <div class="liencote">
+      <a class="lienlogoconnexion" href="authentification.php">
+        <img class="LogoConnexion" src="image/LogoConnexion.png" alt="Logo d'authentification">
+      </a>
+      <a class="lienlogoconnexion" href="authentification.php">
+        <img class="LogoConnexion" src="image/LogoConnexion.png" alt="Logo d'authentification">
+      </a>
+    </div>
   </div>
 
   <div class="menul">

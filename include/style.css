@@ -25,7 +25,7 @@ a
   margin-right: 0vw;
   margin-top: 0.5vw;
   padding: 0vw;
-  width: 50%;
+  width: 43vh;
 	height: auto;
 }
 
@@ -33,17 +33,9 @@ a
 {
   margin-right: 0vw;
   padding: 0vw;
-  margin-top: 1.35vw;
-  max-width: 15%;
+  margin-top: 1vw;
+  max-width: 8vh;
 	height: auto;
-}
-
-.lienlogosite
-{
-}
-
-.lienlogoconnexion
-{
 }
 
 /*Menu qui suit l'écran*/
@@ -63,6 +55,8 @@ a
  box-shadow: 0px 3px 3px grey;
 }
 
+
+
 /*Menu qui ne bouge pas avec l'écran*/
 
 .menul
@@ -79,10 +73,16 @@ a
   transition: 1s;
 }
 
+.liencote
+{
+  margin-right: 3vw;
+}
+
 /*Interaction avec le menul*/
 
 .menufixprop
 {
+
   transition: 2s;
 }
 
