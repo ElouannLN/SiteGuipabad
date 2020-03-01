@@ -2,7 +2,7 @@ body
 {
  padding: 0px;
  margin: 0px;
- background-color: red;
+ background-color: white;
 }
 
 a
@@ -92,6 +92,54 @@ a
 }
 
 /*---*/
+
+
+
+/*Menu Actus bref*/
+
+.actusbref
+{
+ display: flex;
+ justify-content: center;
+ margin-bottom: 0px;
+ padding-bottom: 0px;
+}
+
+.textactusbref
+{
+ padding-right: 2vh;
+ border-right: 5px white double;
+}
+
+.infosclubbref
+{
+   padding-left: 2vh;
+}
+
+.textebrefetinfosclub
+{
+  display: flex;
+  justify-content: center;
+}
+
+/*---*/
+
+/*Actualités*/
+
+.actualités
+{
+ display: flex;
+  justify-content: center;
+}
+
+.news
+{
+ text-align: center;
+}
+
+/*---*/
+
+
 
 .exeterieurcarte
 {
