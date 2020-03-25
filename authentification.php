@@ -36,6 +36,19 @@
               <input type="password" name="mdp" value="" id="mdp">
               <input type="submit">
               <input type="reset" name="" value="Creer un compte" class="btnCreation">
+              <?php
+              if (isset($_GET["error"]))
+              {
+                if ($_GET["error"] == 1)
+                {
+                  echo "<p class='messageErreur'>L'utilisateur n'existe pas</p>";
+                }
+                if ($_GET["error"] == 2)
+                {
+                  echo "<p class='messageErreur'>Le mot de passe n'est pas le bon</p>";
+                }
+              }
+              ?>
             </form>
           </div>
         </div>

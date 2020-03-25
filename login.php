@@ -2,16 +2,20 @@
 
 include("include/connexion.php");
 
-$mdp = $_POST["mdp"];
-$identifiant = $_POST["identifiant"];
-$test = $cnx->query("SELECT COUNT(*) AS resultat FROM utilisateur WHERE identifiant like '".$identifiant."' OR email like '".$identifiant."'");
-$test->setFetchMode(PDO::FETCH_OBJ);
-$resultat = $test->fetch();
+$mdp = $_POST["mdp"]; //Récupération du mot de passe venant du formulaire
+$identifiant = $_POST["identifiant"]; //Récupération de l'identifiant venant du formulaire
+//Récupération des résultats de la requête SQL qui retourne le nombre
+//d'utilisateur correspondant à un identifiant ou un email
+$donnees = $cnx->query("SELECT COUNT(*) AS resultat FROM utilisateur WHERE identifiant like '".$identifiant."' OR email like '".$identifiant."'");
+$donnees->setFetchMode(PDO::FETCH_OBJ);
+$resultat = $donnees->fetch();
+//Vérifie si un utilisateur correspond au pseudo ou au mail
 if($resultat->resultat == 1)
 {
   $utilisateur = $cnx->query("SELECT * FROM utilisateur WHERE identifiant like '".$identifiant."' OR email like '".$identifiant."'");
   $utilisateur->setFetchMode(PDO::FETCH_OBJ);
   $unUtilisateur = $utilisateur->fetch();
+  //Vérifie le mot de passe entrer correspond à l'utilisateur
   if($unUtilisateur->mdp == $mdp)
   {
     echo "Vous êtes connecté<br>";
@@ -22,7 +26,7 @@ if($resultat->resultat == 1)
   }
   else
   {
-    header('Location: authentification.php?error=1');
+    header('Location: authentification.php?error=2');
   }
 }
 else
