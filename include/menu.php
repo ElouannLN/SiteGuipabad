@@ -3,7 +3,7 @@
   <div class="supmenu">
 
     <a class="lienlogosite" href="accueil.php">
-      <img class="Logosite" src="image/Logosite.png" alt="Logo du site">
+      <img class="Logosite" src="image/LogoNMenu.png" alt="Logo du site">
     </a>
 
   </a>
@@ -12,8 +12,8 @@
   </a>
 
   <div class="liencote">
-    <a class="lienlogoconnexion" href="authentification.php">
-      <img class="LogoConnexion" src="image/LogoConnexion.png" alt="Logo d'authentification">
+    <a class="lienlogocote" href="authentification.php">
+      <img class="LogoCote" src="image/LogoConnexion.png" alt="Logo d'authentification">
     </div>
   </div>
 
