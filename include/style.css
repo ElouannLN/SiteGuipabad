@@ -12,20 +12,30 @@ a
 }
 
 /*Menu*/
+
+.menu
+{
+  background-color: rgb(79, 111, 188, 0.25);
+  display: flex;
+  flex-direction: column;
+}
+
 .supmenu
 {
   background: url("../image/FondMenu.jpg") no-repeat center/250vh;
   background-position: right 80% top 50%;
-  border-bottom: 4mm solid white;
+  border-bottom: 1vh double white;
   display: flex;
   align-items: center;
+  margin: 0px;
+  padding: 0px;
 }
 
 .Logosite
 {
   padding: 0px;
   margin: 0px;
-  margin-right: 120vh;
+  margin-right: 140vh;
   height: 25vh;
   weight: auto;
 }
@@ -35,20 +45,29 @@ a
   padding: 0px;
   margin: 0px;
   margin-right: 2.5vh;
-  height: 15vh;
+  height: 12.5vh;
   weight: auto;
 }
 
-.LogoCote
+
+/* Navigation Site */
+
+.undermenu
 {
-  padding: 0px;
-  margin: 0vh;
-  height: 15vh;
-  weight: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: rgb(79, 111, 188, 0.25);
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  border-bottom: 1vh double white;
 }
 
-
-/*---*/
+.menulien
+{
+  font-family: fantasy;
+  font-size: 3vh;
+}
 
 
 
