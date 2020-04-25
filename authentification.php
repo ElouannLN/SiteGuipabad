@@ -47,6 +47,10 @@
                 {
                   echo "<p class='messageErreur'>Le mot de passe n'est pas le bon</p>";
                 }
+                if ($_GET["error"] == 3)
+                {
+                  echo "<p class='messageErreur'>Le mot de passe n'est pas le bon</p>";
+                }
               }
               ?>
             </form>
