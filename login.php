@@ -22,6 +22,8 @@ if($resultat->resultat == 1)
     echo "Bonjour ".$unUtilisateur->prenom." ".$unUtilisateur->nom;
     session_start();
     $_SESSION ["privilege"] = $unUtilisateur->privilege;
+    $_SESSION ["prenom"] = $unUtilisateur->prenom;
+    $_SESSION ["nom"] = $unUtilisateur->nom;
     header('Location: accueil.php');
   }
   else
