@@ -57,7 +57,7 @@ a
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(79, 111, 188, 0.25);
+  background-color: rgb(79, 111, 188, 0.75);
   padding-bottom: 1vh;
   padding-top: 1vh;
   border-bottom: 1vh double white;
@@ -69,36 +69,83 @@ a
   font-size: 3vh;
 }
 
+/*Actus bref*/
 
+.caseactusbrefs
+{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ background-color: rgb(79, 111, 188, 0.50);
+ margin-right: 5vh;
+ margin-top: 5vh;
+ padding-right: 30vh;
+ padding-left: 30vh;
+}
 
-/*Menu Actus bref*/
+.Cartesetinfosclub
+{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 5vh;
+ margin-left: 15vh;
+ background-color: rgb(79, 111, 188, 0.50);
+}
 
 .actusbref
 {
+ margin-top: 12vh;
+ padding-top: 2vh;
+ padding-bottom: 2vh;
  display: flex;
  justify-content: center;
+ align-items: center;
  margin-bottom: 0px;
- padding-bottom: 0px;
+ color: white;
+ background-color: rgb(79, 111, 188, 0.75);
+ text-align: center;
+ font-weight: bold;
+ border-top: 1vh double white;
+ border-bottom: 1vh double white;
 }
+
+ .textebrefetinfosclub
+ {
+   display: flex;
+   justify-content: space-around;
+   align-items: center;
+ }
 
 .textactusbref
 {
- padding-right: 2vh;
- border-right: 5px white double;
-}
-
-.infosclubbref
-{
-   padding-left: 2vh;
-}
-
-.textebrefetinfosclub
-{
+  padding-right: 2vh;
+  color: black;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.Carteinfosclub
+{
+margin-top: 5vh;
+width: 45vh;
+height: 45vh;
 }
 
 /*---*/
+
+
+
+
+.infosclub
+{
+  padding-left: 2vh;
+  color: black;
+}
+
+
 
 /*Actualités*/
 
