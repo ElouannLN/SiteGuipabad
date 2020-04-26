@@ -1,4 +1,5 @@
 <?php
+session_start();
 include("include/connexion.php");
 if (isset($_POST["identifiant"]))
 {
