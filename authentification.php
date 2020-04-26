@@ -1,4 +1,7 @@
-<?php session_start(); ?>
+<?php session_start();
+if(isset($_SESSION ["privilege"]) == false)
+{
+?>
 <!DOCTYPE html>
 <html lang="fr" dir="ltr">
   <head>
@@ -61,3 +64,10 @@
     <script type="text/javascript" src="include/script.js"></script>
   </body>
 </html>
+<?php
+}
+else
+{
+  header("Location:accueil.php");
+}
+?>

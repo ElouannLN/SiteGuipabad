@@ -6,21 +6,25 @@
       <img class="Logosite" src="image/LogoNMenu.png" alt="Logo du site">
     </a>
 
-<!-- IF NON CONNECTE -->
+    <?php if(isset($_SESSION ["privilege"]) == false)
+    {
+      
+    ?>
 
-  <a class="lienlogoconnexion" href="authentification.php">
-    <img class="LogoConnexion" src="image/LogoConnexion.png" alt="Logo d'authentification">
-  </a>
+    <a class="lienlogoconnexion" href="authentification.php">
+      <img class="LogoConnexion" src="image/LogoConnexion.png" alt="Logo d'authentification">
+    </a>
 
-<!-- IF CONNECTE
-
-<p>Bienvenue USER, </br>
-Pour vous déconnecter, cliquez <a class="lienlogodeconnexion" href="deconnexion.php">ici</a>
-
--->
-
-  </div>
-
+    <?php
+    }
+    else
+    {
+    ?>
+    <p>Bienvenue <?php echo $_SESSION["prenom"]; ?>, </br>
+    Pour vous déconnecter, cliquez <a class="lienlogodeconnexion" href="deconnexion.php">ici</a></p>
+    <?php
+    }
+    ?>
   </div>
 
   <div class=undermenu>
