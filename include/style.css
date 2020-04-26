@@ -34,7 +34,6 @@ a
 .Logosite
 {
   padding: 0px;
-  margin: 0px;
   margin-right: 140vh;
   height: 25vh;
   weight: auto;
@@ -44,9 +43,8 @@ a
 {
   padding: 0px;
   margin: 0px;
-  margin-right: 2.5vh;
   height: 12.5vh;
-  weight: auto;
+  width: auto;
 }
 
 
@@ -57,7 +55,7 @@ a
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: rgb(79, 111, 188, 0.75);
+  background-color: rgb(79, 111, 188, 0.80);
   padding-bottom: 1vh;
   padding-top: 1vh;
   border-bottom: 1vh double white;
@@ -65,6 +63,7 @@ a
 
 .menulien
 {
+  color: white;
   font-family: fantasy;
   font-size: 3vh;
 }
@@ -74,13 +73,9 @@ a
 .caseactusbrefs
 {
  display: flex;
- align-items: center;
+ align-items: flex-start;
  flex-direction: column;
- background-color: rgb(79, 111, 188, 0.50);
- margin-right: 5vh;
  margin-top: 5vh;
- padding-right: 30vh;
- padding-left: 30vh;
 }
 
 .Cartesetinfosclub
@@ -89,21 +84,22 @@ a
  align-items: center;
  flex-direction: column;
  margin-top: 5vh;
- margin-left: 15vh;
  background-color: rgb(79, 111, 188, 0.50);
 }
 
 .actusbref
 {
- margin-top: 12vh;
+ margin-top: 0px;
  padding-top: 2vh;
  padding-bottom: 2vh;
+ width: 145vh;
  display: flex;
  justify-content: center;
  align-items: center;
  margin-bottom: 0px;
  color: white;
- background-color: rgb(79, 111, 188, 0.75);
+ background-color: rgb(79, 111, 188, 0.80);
+ font-size: 3.5vh;
  text-align: center;
  font-weight: bold;
  border-top: 1vh double white;
@@ -114,30 +110,104 @@ a
  {
    display: flex;
    justify-content: space-around;
-   align-items: center;
+   align-items: flex-start;
  }
 
 .textactusbref
 {
-  padding-right: 2vh;
+  margin-top: 0vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  width: 145vh;
+  height: auto;
   color: black;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   text-align: center;
+  font-family: fantasy;
+  font-size: 2.5vh;
+  background-color: rgb(79, 111, 188, 0.50);
 }
 
 .Carteinfosclub
 {
-margin-top: 5vh;
+margin: 3vh;
 width: 45vh;
 height: 45vh;
+margin-bottom: 2vh;
 }
 
+.Questionclub
+{
+text-align: center;
+margin-top: 0.5vh;
+margin-bottom: 0.5vh;
+color: black;
+font-size: 3vh;
+font-family: fantasy;
+text-decoration: underline;
+font-weight: bold;
+}
+
+.Reponseclub
+{
+text-align: center;
+margin-top: 0.5vh;
+margin-bottom: 0.5vh;
+color:black;
+font-size: 2vh;
+font-family: fantasy;
+}
+
+.Plusdinfosclub
+{
+text-align: center;
+margin-top: 0.5vh;
+margin-bottom: 3vh;
+color: black;
+font-size: 3vh;
+font-family: fantasy;
+}
+
+.Categorieinfosclub
+{
+text-align: center;
+margin-top: 0.5vh;
+margin-bottom: 0.5vh;
+color: black;
+font-size: 3vh;
+font-family: fantasy;
+text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---*/
-
-
-
 
 .infosclub
 {
