@@ -11,6 +11,14 @@ a
   color: black;
 }
 
+@keyframes slider {
+  0%   {left: 0%;}
+  25%  {top: -100%;}
+  50%  {top: -200%;}
+  75%  {top: -300%;}
+  100% {top: -400%;}
+}
+
 /*Menu*/
 
 .menu
@@ -178,7 +186,18 @@ font-family: fantasy;
 text-decoration: underline;
 }
 
-
+.SliderAcceuil
+{
+  position: relative;
+  width: 20%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 30s slider infinite;
+}
 
 
 

@@ -12,6 +12,11 @@
 
     <div class="textebrefetinfosclub">
      <div class="caseactusbrefs">
+      <figure class="SliderAcceuil">
+      <img class="ImageSlider" src="image/FondMenu" alt="Image du slider d'accueil">
+      <img class="ImageSlider" src="image/FondMenu" alt="Image du slider d'accueil">
+      <img class="ImageSlider" src="image/FondMenu" alt="Image du slider d'accueil">
+      </figure>
       <h2 class="actusbref">L'ACTU EN BREF !</h2>
         <p class="textactusbref">Le club de Coatodon est enfin dissous ! <br/>
                                  Plumy enfin dèrrière les barreaux ? <br/>
