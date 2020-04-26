@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="include/style.css">
   </head>
   <body>
-    <div class="exeterieurcarte">
+    <div class="exeterieurcarte"> 
       <div class="carte">
           <div class="recto">
             <h1>Créer un compte</h1>
