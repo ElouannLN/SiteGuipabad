@@ -6,9 +6,19 @@
       <img class="Logosite" src="image/LogoNMenu.png" alt="Logo du site">
     </a>
 
+<!-- IF NON CONNECTE -->
+
   <a class="lienlogoconnexion" href="authentification.php">
     <img class="LogoConnexion" src="image/LogoConnexion.png" alt="Logo d'authentification">
   </a>
+
+<!-- IF CONNECTE
+
+<p>Bienvenue USER, </br>
+Pour vous déconnecter, cliquez <a class="lienlogodeconnexion" href="deconnexion.php">ici</a>
+
+-->
+
   </div>
 
   </div>
