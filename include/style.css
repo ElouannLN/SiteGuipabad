@@ -1,3 +1,17 @@
+@media (max-width: 600px) {
+  body
+  {
+    display: none;
+  }
+}
+
+@media (max-height: 600px) {
+  body
+  {
+    display: none;
+  }
+}
+
 body
 {
  padding: 0px;
