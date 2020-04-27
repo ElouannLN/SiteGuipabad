@@ -1,4 +1,4 @@
-<?php 
+<?php
 session_start();
 include("include/connexion.php");
 ?>
@@ -59,6 +59,7 @@ include("include/connexion.php");
       <th>Prix</th>
     </tr>
   <?php
+  echo "SELECT * FROM tournoi";
   $lesTournois = $cnx->query("SELECT * FROM tournoi");
   $lesTournois->setFetchMode(PDO::FETCH_OBJ);
   while($unTournoi = $lesTournois->fetch())
