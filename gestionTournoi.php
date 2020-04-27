@@ -49,7 +49,11 @@ if(isset($_SESSION["privilege"]))
             $SQL2 = $SQL2 . ")";
 
             $cnx->query($SQL1.$SQL2);
-
+            header("Location: tournois.php");
+        }
+        else
+        {
+          header("Location: tournois.php");
         }
     }
     else
