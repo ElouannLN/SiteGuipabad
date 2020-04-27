@@ -379,6 +379,12 @@ padding: 0.75vh;
   border: 3px solid rgba(79, 111, 188, 0.8);
 }
 
+.mainTournoi
+{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .tableauAffichageTournoi
 {
   margin-left: auto;
