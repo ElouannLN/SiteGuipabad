@@ -251,7 +251,16 @@ text-decoration: underline;
 
 /*---*/
 
-
+.separation
+{
+  width: 80%;
+  height: 1px;
+  background-color: rgba(79, 111, 188, 0.8);
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
 
 .exeterieurcarte
 {
@@ -337,4 +346,39 @@ background-color: rgba(255, 0, 0, 0.55);
 border: 1px rgba(255, 0, 0) solid;
 border-radius: 5px 5px 5px 5px;
 padding: 0.75vh;
+}
+
+.titrePageTournoi
+{
+  color: rgba(79, 111, 188, 0.8);
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  text-decoration: underline;
+}
+
+.formAjouterTournoi table
+{
+  margin-left:auto;
+  margin-right:auto;
+  border: 3px solid rgba(79, 111, 188, 0.8);
+}
+
+.tableauAffichageTournoi
+{
+  width: 95vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tableauAffichageTournoi tr th
+{
+  background-color: rgba(79, 111, 188, 0.8);
+  color: white;
+}
+
+.tableauAffichageTournoi tr td
+{
+  border: 1px solid rgba(79, 111, 188, 0.8);
 }
