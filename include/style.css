@@ -13,10 +13,8 @@ a
 
 @keyframes slider {
   0%   {left: 0%;}
-  25%  {left: -100%;}
-  50%  {left: -200%;}
-  75%  {left: -300%;}
-  100% {left: -400%;}
+  50%  {left: -100%;}
+  100%  {left: -200%;}
 }
 
 /*Menu*/
@@ -84,6 +82,7 @@ a
  align-items: flex-start;
  flex-direction: column;
  margin-top: 5vh;
+ width: 60vw;
 }
 
 .Cartesetinfosclub
@@ -93,6 +92,7 @@ a
  flex-direction: column;
  margin-top: 5vh;
  background-color: rgb(79, 111, 188, 0.50);
+ width: 35vw;
 }
 
 .actusbref
@@ -100,7 +100,7 @@ a
  margin-top: 0px;
  padding-top: 2vh;
  padding-bottom: 2vh;
- width: 145vh;
+ width: 100%;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -126,8 +126,8 @@ a
   margin-top: 0vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  width: 145vh;
   height: auto;
+  width: 100%;
   color: black;
   text-align: center;
   font-family: fantasy;
@@ -192,14 +192,13 @@ text-decoration: underline;
   flex-direction: row;
   align-items: center;
   position: relative;
-  width: 140vh;
+  width: 100%;
   overflow: hidden;
   margin: 0;
   padding: 0;
   font-size: 0;
   left: 0;
   text-align: left;
-  animation: 30s slider infinite;
 }
 
 .ImageSlider
