@@ -49,6 +49,9 @@ if(isset($_SESSION["privilege"]))
                 $affiche = $_POST["affiche"];
                 $SQL1 = $SQL1 . ",affiche";
                 $SQL2 = $SQL2 . ",\"".$affiche."\"";
+                $uploaddir = 'afficheTournoi';
+                $uploadfile = $uploaddir . basename($_FILES['affiche']['name']);
+                move_uploaded_file($_FILES['affiche']['tmp_name'], $uploadfile);
             }
 
             $SQL1 = $SQL1 . ") ";
@@ -56,11 +59,12 @@ if(isset($_SESSION["privilege"]))
 
             $cnx->query($SQL1.$SQL2);
             echo $SQL1.$SQL2;
-            header("Location: tournois.php");
+            //header("Location: tournois.php");
         }
         elseif (isset($_GET["suppression"]))
         {
             //Suppression d'un tournoi de la BDD
+
             $idSupprimer = $_GET["suppression"];
             $cnx->query("DELETE FROM tournoi WHERE id =".$idSupprimer);
             header("Location: tournois.php");
