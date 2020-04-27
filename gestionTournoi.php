@@ -4,11 +4,14 @@ if(isset($_SESSION["privilege"]))
 {
     if($_SESSION["privilege"] == 2)
     {
+        include("include/connexion.php");
+
+        
         if(isset($_POST["ajouterTournoi"]))
         {
-            include("include/connexion.php");
+            //Ajout d'un tournoi dans la BDD
 
-            $SQL1 = "INSERT INTO tournoi (tournoi,club";
+            $SQL1 = "INSERT INTO tournoi (tournoi,club,categorie";
             $SQL2 = " VALUES (";
 
             $tournoi = $_POST["ajouterTournoi"];
@@ -16,6 +19,9 @@ if(isset($_SESSION["privilege"]))
 
             $club = $_POST["club"];
             $SQL2 = $SQL2 . ",\"".$club."\"";
+
+            $categorie = $_POST["categorie"];
+            $SQL2 = $SQL2 . ",".$categorie;
 
             if(isset($_POST["date"]))
             {
@@ -49,6 +55,14 @@ if(isset($_SESSION["privilege"]))
             $SQL2 = $SQL2 . ")";
 
             $cnx->query($SQL1.$SQL2);
+            echo $SQL1.$SQL2;
+            header("Location: tournois.php");
+        }
+        elseif (isset($_GET["suppression"]))
+        {
+            //Suppression d'un tournoi de la BDD
+            $idSupprimer = $_GET["suppression"];
+            $cnx->query("DELETE FROM tournoi WHERE id =".$idSupprimer);
             header("Location: tournois.php");
         }
         else
