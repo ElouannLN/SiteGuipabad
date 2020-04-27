@@ -35,3 +35,4 @@
     <a class="menulien" href="photos.php">Galerie photos</a>
     <a class="menulien" href="presse.php">Articles de presse</a>
   </div>
+</div>

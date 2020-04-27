@@ -10,6 +10,7 @@ if(isset($_SESSION ["privilege"]) == false)
     <link rel="stylesheet" href="include/style.css">
   </head>
   <body>
+    <?php include("include/menu.php"); ?>
     <div class="exeterieurcarte"> 
       <div class="carte">
           <div class="recto">
