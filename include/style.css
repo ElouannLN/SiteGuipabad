@@ -34,6 +34,7 @@ a
   background-position: right 80% top 50%;
   border-bottom: 1vh double white;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   margin: 0px;
   padding: 0px;
@@ -42,9 +43,13 @@ a
 .Logosite
 {
   padding: 0px;
-  margin-right: 140vh;
   height: 25vh;
   width: auto;
+}
+
+.lienlogoconnexion
+{
+  margin-right: 2vw;
 }
 
 .LogoConnexion
@@ -73,7 +78,7 @@ a
 {
   color: white;
   font-family: fantasy;
-  font-size: 3vh;
+  font-size: 1.5vw;
 }
 
 /*Actus bref*/
@@ -100,7 +105,7 @@ a
  margin-top: 0px;
  padding-top: 2vh;
  padding-bottom: 2vh;
- width: 145vh;
+ width: 72vw;
  display: flex;
  justify-content: center;
  align-items: center;
