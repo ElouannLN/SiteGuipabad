@@ -101,7 +101,7 @@ a
  margin-top: 5vh;
  margin-right: 1.5vw;
  width: 25vw;
- height: 85vh;
+ height: 100%;
  background-color: rgb(79, 111, 188, 0.50);
 }
 
@@ -129,6 +129,7 @@ a
    display: flex;
    justify-content: space-between;
    align-items: flex-start;
+   height: 85vh;
  }
 
 .textactusbref
