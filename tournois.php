@@ -14,56 +14,23 @@ include("include/connexion.php");
     <h1 class="titrePageTournoi">Tournois</h1>
     <?php
     $administrateur = false;
-    if(isset($_SESSION["privilege"])){
-      if($_SESSION["privilege"] == 2){
+    if(isset($_SESSION["privilege"])) //Si l'utilisateur est connecté
+    {
+      if($_SESSION["privilege"] == 2) //Si l'utilisateur est administrateur
+      {
         $administrateur = true;
+        include("include/formAjoutTournoi.php"); //Include du formulaire d'ajout de tournoi
+      }
+    }
     ?>
-    <form action="gestionTournoi.php" method="POST" class="formAjouterTournoi">
-      <table>
-        <tr>
-          <td><label for="tournoi">Nom du tournoi :</label></td>
-          <td><input type="text" id="tournoi" name="ajouterTournoi" required></td>
-        </tr>
-        <tr>
-          <td><label for="club">Nom du club</label></td>
-          <td><input type="text" id="club" name="club"></td>
-        </tr>
-        <tr>
-          <td><label for="categorie">Catégorie :</label></td>
-          <td>
-            <select name="categorie" id="categorie">
-              <option value="0">Jeune</option>
-              <option value="1">Adulte</option>
-            </select>
-        </td>
-        </tr>
-        <tr>
-          <td><label for="date">Date :</label></td>
-          <td><input type="date" id="date" name="date" required></td>
-        </tr>
-        <tr>
-          <td><label for="adresse">Adresse :</label></td>
-          <td><input type="text" id="adresse" name="adresse"></td>
-        </tr>
-        <tr>
-          <td><label for="cout">Coût d'inscription :</label></td>
-          <td><input type="number" id="cout" name="cout"></td>
-        </tr>
-        <tr>
-          <td><label for="affiche">Affiche :</label></td>
-          <td><input type="file" id="affiche" name="affiche"></td>
-        </tr>
-        <tr>
-          <td></td>
-          <td><input type="submit"></td>
-        </tr>
-      </table>
-    </form>
-    <div class="separation"></div>
-    <?php }} ?>
     <div class="mainTournoi">
       <div class="tournoiJeune">
         <h2 class="titrePageTournoi">Tournois Jeunes</h2>
+        <?php
+        include("include/outils.php");
+        ?>
+        <img src="afficheTournoi/<?php echo afficheProchainTournoi(0); ?>" class="afficheTournoiRecent" alt="Pas d'affiche disponible">
+        <div class="separation"></div>
         <table class="tableauAffichageTournoi">
           <tr>
             <th>Nom</th>
@@ -77,6 +44,7 @@ include("include/connexion.php");
             <?php } ?>
           </tr>
         <?php
+        //Récupération des tournois jeunes dans la base de données
         $lesTournois = $cnx->query("SELECT * FROM tournoi WHERE categorie = 0");
         $lesTournois->setFetchMode(PDO::FETCH_OBJ);
         while($unTournoi = $lesTournois->fetch())
@@ -104,6 +72,8 @@ include("include/connexion.php");
       </div>
       <div class="tournoiAdulte">
         <h2 class="titrePageTournoi">Tournois Adulte</h2>
+        <img src="afficheTournoi/<?php echo afficheProchainTournoi(1); ?>" class="afficheTournoiRecent" alt="Pas d'affiche disponible">
+        <div class="separation"></div>
         <table class="tableauAffichageTournoi">
           <tr>
             <th>Nom</th>
@@ -117,6 +87,7 @@ include("include/connexion.php");
             <?php } ?>
           </tr>
         <?php
+        //Récupération des tournois jeunes dans la base de données
         $lesTournois = $cnx->query("SELECT * FROM tournoi WHERE categorie = 1");
         $lesTournois->setFetchMode(PDO::FETCH_OBJ);
         while($unTournoi = $lesTournois->fetch())
