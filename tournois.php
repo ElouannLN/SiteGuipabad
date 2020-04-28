@@ -35,7 +35,6 @@ include("include/connexion.php");
           <tr>
             <th>Nom</th>
             <th>Club</th>
-            <th>Catégorie</th>
             <th>Date</th>
             <th>Adresse</th>
             <th>Prix</th>
@@ -57,23 +56,20 @@ include("include/connexion.php");
             ?>>
           <td><?php echo $unTournoi->tournoi ?></td>
           <td><?php echo $unTournoi->club ?></td>
-          <td>
-            <?php
-            if($unTournoi->inscription == 0){echo "Jeune";}
-            else{echo "Jeune";}
-            ?>
-          </td>
           <td><?php echo $unTournoi->date ?></td>
           <td><?php echo $unTournoi->adresse ?></td>
           <td><?php echo $unTournoi->inscription ?></td>
           <?php if($administrateur){ ?>
-          <td><a href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>">
-            <img src="image/croix.png" alt="supprimer"></a>
+          <td class="caseSupprimerTournoi">
+            <a href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>">
+              <p>Supprimer</p>
+            </a>
           </td>
           <?php } ?>
         </tr>
         <?php } ?>
         </table>
+        <a href="tournoiPdf.php?categorie=0" class="lienPdf"><div><p>PDF</p></div></a>
       </div>
       <div class="tournoiAdulte">
         <h2 class="titrePageTournoi">Tournois Adulte</h2>
@@ -83,7 +79,6 @@ include("include/connexion.php");
           <tr>
             <th>Nom</th>
             <th>Club</th>
-            <th>Catégorie</th>
             <th>Date</th>
             <th>Adresse</th>
             <th>Prix</th>
@@ -105,15 +100,7 @@ include("include/connexion.php");
             ?>>
           <td><?php echo $unTournoi->tournoi ?></td>
           <td><?php echo $unTournoi->club ?></td>
-          <td>
-            <?php
-            if($unTournoi->inscription == 0){echo "Jeune";}
-            else{echo "Jeune";}
-            ?>
-          </td>
-          <td>
-            <?php echo $unTournoi->date ?>
-          </td>
+          <td><?php echo $unTournoi->date ?></td>
           <td><?php echo $unTournoi->adresse ?></td>
           <td><?php echo $unTournoi->inscription ?></td>
           <?php if($administrateur){ ?>
