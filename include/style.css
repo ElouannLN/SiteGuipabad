@@ -27,9 +27,10 @@ a
 
 @keyframes slider {
   0%   {left: 0%;}
-  35%  {left: 0%;}
-  70%  {left: -100%;}
-  100%  {left: -100%;}
+  25%  {left: 0%;}
+  50%  {left: -100%;}
+  75%  {left: -100%;}
+  100% {left: 0%;}
 }
 
 /*----------------------------------------------------------------------------*/
@@ -151,7 +152,7 @@ font-family:fantasy;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  height: 85vh;
+  height: 80vh;
 }
 
 .caseactusbrefs
@@ -186,7 +187,7 @@ margin-right: auto;
   font-size: 0;
   left: 0;
   text-align: left;
-  animation: 10s slider infinite;
+  animation: 20s slider infinite;
 }
 
 .ImageSlider
@@ -215,7 +216,7 @@ margin-right: auto;
 
 .textactusbref
 {
-  margin-top: 0vh;
+  margin: 0px;
   padding-top: 2vh;
   padding-bottom: 2vh;
   width: 100%;
@@ -283,7 +284,6 @@ text-decoration: underline;
 {
 text-align: center;
 margin-top: 0.5vh;
-margin-bottom: 3vh;
 color: black;
 font-size: 1.5vw;
 font-family: fantasy;
