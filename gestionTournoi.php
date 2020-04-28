@@ -5,7 +5,6 @@ if(isset($_SESSION["privilege"]))
     if($_SESSION["privilege"] == 2)
     {
         include("include/connexion.php");
-
         
         if(isset($_POST["ajouterTournoi"]))
         {
@@ -83,6 +82,14 @@ if(isset($_SESSION["privilege"]))
             //Suppression d'un tournoi de la BDD
 
             $idSupprimer = $_GET["suppression"];
+            $idAfficheSupprimer = $cnx->query("SELECT affiche FROM tournoi WHERE id =".$idSupprimer);
+            $idAfficheSupprimer->setFetchMode(PDO::FETCH_OBJ);
+            $nomAfficheSupprimer = $idAfficheSupprimer->fetch();
+            echo "afficheTournoi/".$nomAfficheSupprimer->affiche;
+            if($nomAfficheSupprimer->affiche != "")
+            {
+                unlink("afficheTournoi/".$nomAfficheSupprimer->affiche);
+            }
             $cnx->query("DELETE FROM tournoi WHERE id =".$idSupprimer);
             header("Location: tournois.php");
         }

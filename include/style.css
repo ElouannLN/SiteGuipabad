@@ -469,6 +469,11 @@ padding: 0.75vh;
   height: 100%;
 }
 
+.tournoiProche
+{
+  background-color: rgba(79, 111, 188, 0.8);
+}
+
 .tableauAffichageTournoi tr td a img
 {
   max-width: 2vw;
@@ -481,3 +486,4 @@ padding: 0.75vh;
   margin-left: auto;
   margin-right: auto;
 }
+

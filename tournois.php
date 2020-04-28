@@ -45,11 +45,16 @@ include("include/connexion.php");
           </tr>
         <?php
         //Récupération des tournois jeunes dans la base de données
-        $lesTournois = $cnx->query("SELECT * FROM tournoi WHERE categorie = 0");
+        $lesTournois = $cnx->query("SELECT * FROM tournoi WHERE categorie = 0 ORDER BY date");
         $lesTournois->setFetchMode(PDO::FETCH_OBJ);
         while($unTournoi = $lesTournois->fetch())
         { ?>
-        <tr>
+        <tr <?php
+            if($unTournoi->date == dateProchainTournoi(0))
+            {
+              echo "class='tournoiProche'";
+            }
+            ?>>
           <td><?php echo $unTournoi->tournoi ?></td>
           <td><?php echo $unTournoi->club ?></td>
           <td>
@@ -88,11 +93,16 @@ include("include/connexion.php");
           </tr>
         <?php
         //Récupération des tournois jeunes dans la base de données
-        $lesTournois = $cnx->query("SELECT * FROM tournoi WHERE categorie = 1");
+        $lesTournois = $cnx->query("SELECT * FROM tournoi WHERE categorie = 1 ORDER BY date");
         $lesTournois->setFetchMode(PDO::FETCH_OBJ);
         while($unTournoi = $lesTournois->fetch())
         { ?>
-        <tr>
+        <tr <?php
+            if($unTournoi->date == dateProchainTournoi(1))
+            {
+              echo "class='tournoiProche'";
+            }
+            ?>>
           <td><?php echo $unTournoi->tournoi ?></td>
           <td><?php echo $unTournoi->club ?></td>
           <td>
@@ -101,7 +111,9 @@ include("include/connexion.php");
             else{echo "Jeune";}
             ?>
           </td>
-          <td><?php echo $unTournoi->date ?></td>
+          <td>
+            <?php echo $unTournoi->date ?>
+          </td>
           <td><?php echo $unTournoi->adresse ?></td>
           <td><?php echo $unTournoi->inscription ?></td>
           <?php if($administrateur){ ?>
