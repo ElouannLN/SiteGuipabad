@@ -50,7 +50,7 @@ if(isset($_SESSION["privilege"]))
             $SQL1 = $SQL1 . ",affiche";
             $SQL2 = $SQL2 . ",\"".$affiche."\"";
             if(isset($_FILES['affiche'])) //Test si l'input file a été utilisé.
-            { 
+            {
                 $dossier = 'afficheTournoi/'; //Le dossier de destination du fichier.
                 //basename() sépare le nom du fichier et le nom du dossier.
                 $fichier = basename($_FILES['affiche']['name']); //récupère le nom du fichier.
