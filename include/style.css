@@ -1,4 +1,4 @@
-@media (max-width: 600px) {
+/*@media (max-width: 600px) {
   body
   {
     display: none;
@@ -11,7 +11,7 @@
     display: none;
   }
 }
-
+*/
 body
 {
  padding: 0px;
@@ -403,6 +403,18 @@ padding: 0.75vh;
   grid-template-columns: 1fr 1fr;
 }
 
+.tournoiAdulte
+{
+  display: flex;
+  flex-direction: column;
+}
+
+.tournoiJeune
+{
+  display: flex;
+  flex-direction: column;
+}
+
 .tableauAffichageTournoi
 {
   margin-left: auto;
@@ -435,4 +447,11 @@ padding: 0.75vh;
 {
   max-width: 2vw;
   width: 100%;
+}
+
+.afficheTournoiRecent
+{
+  max-width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
