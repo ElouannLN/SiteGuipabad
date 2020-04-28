@@ -61,9 +61,7 @@ include("include/connexion.php");
           <td><?php echo $unTournoi->inscription ?></td>
           <?php if($administrateur){ ?>
           <td class="caseSupprimerTournoi">
-            <a href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>">
-              <p>Supprimer</p>
-            </a>
+            <a class="lienSupprimerTournoi" href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>"> Supprimer </a>
           </td>
           <?php } ?>
         </tr>
