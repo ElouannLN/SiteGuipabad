@@ -27,13 +27,14 @@ a
 
 @keyframes slider {
   0%   {left: 0%;}
-  25%  {left: -140vh;}
-  50%  {left: -200%;}
-  75%  {left: -300%;}
-  100% {left: -400%;}
+  35%  {left: 0%;}
+  70%  {left: -100%;}
+  100%  {left: -100%;}
 }
 
+/*----------------------------------------------------------------------------*/
 /*Menu*/
+/*----------------------------------------------------------------------------*/
 
 .menu
 {
@@ -61,10 +62,9 @@ a
   width: auto;
 }
 
-.lienlogoconnexion
-{
-  margin-right: 2vw;
-}
+
+/*Si la session n'est pas active*/
+
 
 .LogoConnexion
 {
@@ -74,8 +74,53 @@ a
   width: auto;
 }
 
+.lienlogoconnexion
+{
+  margin-right: 2vw;
+}
+
+
+/*Si la session est active*/
+
+.conteneurMessageMenu
+{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 1.2vw;
+}
+
+
+.messageMenuConnectes
+{
+  margin: 0px;
+  text-align: right;
+  font-size: 2.2vw;
+  font-family: fantasy;
+  color: white;
+  font-weight: 700;
+}
+
+.messageMenuDeconnexion
+{
+  margin: 0px;
+  text-align: right;
+  font-size: 1.4vw;
+  font-family: fantasy;
+  color: white;
+  font-weight: 700;
+}
+
+.lienDeconnexion
+{
+text-decoration: underline;
+font-weight: 700;
+color: white;
+font-family:fantasy;
+}
 
 /* Navigation Site */
+
 
 .undermenu
 {
@@ -95,7 +140,19 @@ a
   font-size: 1.5vw;
 }
 
-/*Actus bref*/
+
+/*----------------------------------------------------------------------------*/
+/*PAGE D'ACCEUIL*/
+/*----------------------------------------------------------------------------*/
+/*Entête - Actu brefs et Infos club*/
+
+.textebrefetinfosclub
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  height: 85vh;
+}
 
 .caseactusbrefs
 {
@@ -104,19 +161,36 @@ a
  align-items: flex-start;
  flex-direction: column;
  margin-top: 5vh;
- width: 65vw;
+ width: 67.5vw;
 }
 
-.Cartesetinfosclub
+.conteneurSlider
 {
- display: flex;
- align-items: center;
- flex-direction: column;
- margin-top: 5vh;
- margin-right: 1.5vw;
- width: 25vw;
- height: 100%;
- background-color: rgb(79, 111, 188, 0.50);
+width: 80%;
+overflow: hidden;
+margin-left: auto;
+margin-right: auto;
+}
+
+.SliderAcceuil
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+  width: 200%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  left: 0;
+  text-align: left;
+  animation: 10s slider infinite;
+}
+
+.ImageSlider
+{
+ width: 100%;
 }
 
 .actusbref
@@ -138,14 +212,6 @@ a
  border-bottom: 1vh double white;
 }
 
- .textebrefetinfosclub
- {
-   display: flex;
-   justify-content: space-between;
-   align-items: flex-start;
-   height: 85vh;
- }
-
 .textactusbref
 {
   margin-top: 0vh;
@@ -157,6 +223,18 @@ a
   font-family: fantasy;
   font-size: 2.5vh;
   background-color: rgb(79, 111, 188, 0.50);
+}
+
+.Cartesetinfosclub
+{
+ display: flex;
+ align-items: center;
+ flex-direction: column;
+ margin-top: 5vh;
+ margin-right: 1.5vw;
+ width: 25vw;
+ height: 100%;
+ background-color: rgb(79, 111, 188, 0.50);
 }
 
 .Carteinfosclub
@@ -189,16 +267,6 @@ font-size: 1vw;
 font-family: fantasy;
 }
 
-.Plusdinfosclub
-{
-text-align: center;
-margin-top: 0.5vh;
-margin-bottom: 3vh;
-color: black;
-font-size: 1.5vw;
-font-family: fantasy;
-}
-
 .Categorieinfosclub
 {
 text-align: center;
@@ -210,79 +278,33 @@ font-family: fantasy;
 text-decoration: underline;
 }
 
-.SliderAcceuil
+.Plusdinfosclub
 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  position: relative;
-  width: 140vh;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-  font-size: 0;
-  left: 0;
-  text-align: left;
-  animation: 30s slider infinite;
+text-align: center;
+margin-top: 0.5vh;
+margin-bottom: 3vh;
+color: black;
+font-size: 1.5vw;
+font-family: fantasy;
 }
 
-.ImageSlider
+.actualites
 {
- width: 100%;
-}
-
-.conteneurSlider
-{
-width: 100%;
-overflow: hidden;
-}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---*/
-
-.infosclub
-{
-  padding-left: 2vh;
-  color: black;
-}
-
-
-
-/*Actualités*/
-
-.actualités
-{
- display: flex;
-  justify-content: center;
 }
 
 .news
 {
- text-align: center;
+
+
 }
 
-/*---*/
+
+/*----------------------------------------------------------------------------*/
+/*PAGE AUTHENTIFICATION*/
+/*----------------------------------------------------------------------------*/
 
 .separation
 {
@@ -368,10 +390,6 @@ overflow: hidden;
   flex-direction: column;
 }
 
-.test
-{
-  height: 100%;
-}
 
 .messageErreur
 {
@@ -380,6 +398,13 @@ border: 1px rgba(255, 0, 0) solid;
 border-radius: 5px 5px 5px 5px;
 padding: 0.75vh;
 }
+
+
+
+/*----------------------------------------------------------------------------*/
+/*PAGE DES TOURNOIS*/
+/*----------------------------------------------------------------------------*/
+
 
 .titrePageTournoi
 {

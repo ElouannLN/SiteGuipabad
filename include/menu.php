@@ -8,7 +8,7 @@
 
     <?php if(isset($_SESSION ["privilege"]) == false)
     {
-      
+
     ?>
 
     <a class="lienlogoconnexion" href="authentification.php">
@@ -20,8 +20,11 @@
     else
     {
     ?>
-    <p>Bienvenue <?php echo $_SESSION["prenom"]; ?>, </br>
-    Pour vous déconnecter, cliquez <a class="lienlogodeconnexion" href="deconnexion.php">ici</a></p>
+    <div class="conteneurMessageMenu">
+
+      <p class="messageMenuConnectes">Bienvenue <?php echo $_SESSION["prenom"]; ?>, </br></p>
+      <p class="messageMenuDeconnexion">Pour vous déconnecter, cliquez <a class="lienDeconnexion" href="deconnexion.php">ici</a>.</p>
+    </div>
     <?php
     }
     ?>
