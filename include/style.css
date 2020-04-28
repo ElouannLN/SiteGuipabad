@@ -162,11 +162,12 @@ font-family:fantasy;
  flex-direction: column;
  margin-top: 5vh;
  width: 67.5vw;
+ height: 100%;
 }
 
 .conteneurSlider
 {
-width: 80%;
+width: 65%;
 overflow: hidden;
 margin-left: auto;
 margin-right: auto;

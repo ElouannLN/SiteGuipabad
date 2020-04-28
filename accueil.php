@@ -14,8 +14,8 @@
      <div class="caseactusbrefs">
        <div class="conteneurSlider">
          <figure class="SliderAcceuil">
-          <img class="ImageSlider" src="image/FondMenu" alt="Image du slider d'accueil">
-          <img class="ImageSlider" src="image/FondMenu" alt="Image du slider d'accueil">
+          <img class="ImageSlider" src="image/ClubJeunes.jpg" alt="Image du slider d'accueil">
+          <img class="ImageSlider" src="image/ClubAdultes.jpg" alt="Image du slider d'accueil">
          </figure>
        </div>
       <h2 class="actusbref">L'ACTU EN BREF !</h2>
