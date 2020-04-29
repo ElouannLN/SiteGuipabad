@@ -207,7 +207,7 @@ margin-right: auto;
  margin-bottom: 0px;
  color: white;
  background-color: rgb(79, 111, 188, 0.80);
- font-size: 2.5vw;
+ font-size: 4.5vh;
  text-align: center;
  font-weight: bold;
  border-top: 1vh double white;
@@ -242,18 +242,16 @@ margin-right: auto;
 .Carteinfosclub
 {
 width: 90%;
-height: 100%;
-margin-top: 2.5vh;
-margin-bottom: 2vh;
+height: 90%;
 }
 
 .Questionclub
 {
 text-align: center;
-margin-top: 0.5vh;
+margin-top: 2vh;
 margin-bottom: 0.5vh;
 color: black;
-font-size: 1.5vw;
+font-size: 3.2vh;
 font-family: fantasy;
 text-decoration: underline;
 font-weight: bold;
@@ -262,10 +260,10 @@ font-weight: bold;
 .Reponseclub
 {
 text-align: center;
-margin-top: 0.5vh;
+margin-top: 0.2vh;
 margin-bottom: 0.5vh;
 color:black;
-font-size: 1vw;
+font-size: 2vh;
 font-family: fantasy;
 }
 
@@ -275,7 +273,7 @@ text-align: center;
 margin-top: 0.5vh;
 margin-bottom: 0.5vh;
 color: black;
-font-size: 1.5vw;
+font-size: 2.5vh;
 font-family: fantasy;
 text-decoration: underline;
 }
@@ -283,17 +281,29 @@ text-decoration: underline;
 .Plusdinfosclub
 {
 text-align: center;
-margin-top: 0.5vh;
+margin-top: 1vh;
 color: black;
-font-size: 1.5vw;
+font-size: 3.2vh;
 font-family: fantasy;
 }
 
 .actualites
 {
-
-
-
+ margin-top: 10vh;
+ padding-top: 2vh;
+ padding-bottom: 2vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 0px;
+ color: white;
+ background-color: rgb(79, 111, 188, 0.80);
+ font-size: 4.5vh;
+ text-align: center;
+ font-weight: bold;
+ border-top: 1vh double white;
+ border-bottom: 1vh double white;
 }
 
 .news
