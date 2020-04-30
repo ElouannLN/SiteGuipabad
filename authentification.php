@@ -11,10 +11,10 @@ if(isset($_SESSION ["privilege"]) == false)
   </head>
   <body>
     <?php include("include/menu.php"); ?>
-    <div class="exeterieurcarte"> 
+    <div class="exeterieurcarte">
       <div class="carte">
           <div class="recto">
-            <h1>Créer un compte</h1>
+            <h1>- Créer un compte -</h1>
             <form class="formulaire" action="utilisateur.php" method="post">
               <label for="identifiantCreation">Entrez votre identifiant</label>
               <input type="text" name="identifiant" id="identifiantCreation" required min="5">
@@ -33,7 +33,7 @@ if(isset($_SESSION ["privilege"]) == false)
             </form>
           </div>
           <div class="verso">
-            <h1>Connexion</h1>
+            <h1>- Connexion -</h1>
             <form class="formulaire" action="login.php" method="post">
               <label for="identifiant">Entrez votre identifiant</label>
               <input type="text" name="identifiant" id="identifiant">
