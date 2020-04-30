@@ -152,20 +152,11 @@ include("include/connexion.php");
                 }
               }
             }
-
-
             //nextSibling
             //getElementsByTagName('tournoi')
             //hasChildNodes()
             //nodeType
         });
-        function disparitionForm()
-        {
-          var formulaire = document.querySelector(".formAjouterTournoi table");
-          formulaire.style.width = "0";
-          formulaire.style.height = "0";
-        }
-        disparitionForm();
     </script>
   </body>
 </html>
