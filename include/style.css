@@ -550,6 +550,11 @@ padding: 0.75vh;
 
 /* Case supprimer un tournoi*/
 
+.caseSupprimerTournoi
+{
+  transition-duration: 0.4s;
+}
+
 .caseSupprimerTournoi div
 {
   display: grid;
@@ -559,9 +564,13 @@ padding: 0.75vh;
 
 .caseSupprimerTournoi:hover
 {
-  transition-duration: 0.4s;
   background-color: tomato;
   cursor: pointer;
+}
+
+.caseSupprimerTournoi a p
+{
+  transition-duration: 0.4s;
 }
 
 .caseSupprimerTournoi:hover a p
@@ -571,6 +580,12 @@ padding: 0.75vh;
 
 /* Case modifier un tournoi*/
 
+.caseModifierTournoi
+{
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
 .caseModifierTournoi div
 {
   display: grid;
@@ -579,9 +594,12 @@ padding: 0.75vh;
 
 .caseModifierTournoi:hover
 {
-  transition-duration: 0.4s;
   background-color: rgb(81, 151, 255);
-  cursor: pointer;
+}
+
+.caseModifierTournoi div p
+{
+  transition-duration: 0.4s;
 }
 
 .caseModifierTournoi:hover div p
@@ -637,4 +655,15 @@ padding: 0.75vh;
 {
   background-color: white;
   color: rgb(255, 113, 113);
+}
+
+/*----------------------------------------------------------------------------*/
+/*PAGE Galerie*/
+/*----------------------------------------------------------------------------*/
+
+.imageLightBox
+{
+  position: fixed;
+  max-width: 90vw;
+  max-height: 90vh;
 }
