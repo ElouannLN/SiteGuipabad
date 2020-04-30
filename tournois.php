@@ -152,8 +152,6 @@ include("include/connexion.php");
                 }
               }
             }
-
-
             //nextSibling
             //getElementsByTagName('tournoi')
             //hasChildNodes()
