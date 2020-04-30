@@ -63,7 +63,9 @@ include("include/connexion.php");
           <?php if($administrateur){ ?>
           <td class="caseModifierTournoi">
             <div>
+              <a href="modifierTournoi.php?modifier=<?php echo $unTournoi->id; ?>">
                 <p>Modifier</p>
+              </a>
             </div>
           </td>
           <td class="caseSupprimerTournoi">
@@ -115,7 +117,7 @@ include("include/connexion.php");
           <?php if($administrateur){ ?>
           <td class="caseModifierTournoi">
             <div>
-              <a href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>">
+              <a href="modifierTournoi.php?modifier=<?php echo $unTournoi->id; ?>">
                 <p>Modifier</p>
               </a>
             </div>
