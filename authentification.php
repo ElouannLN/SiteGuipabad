@@ -40,7 +40,7 @@ if(isset($_SESSION ["privilege"]) == false)
               <label for="mdp">Entrez votre mot de passe :</label>
               <input type="password" name="mdp" value="" id="mdp">
               <input type="submit">
-              <input type="reset" name="" value="Creer un compte" class="btnCreation">
+              <input type="reset" name="" value="Créer un compte" class="btnCreation">
               <?php
               if (isset($_GET["error"]))
               {
