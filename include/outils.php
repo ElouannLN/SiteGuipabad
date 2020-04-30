@@ -31,10 +31,10 @@ function afficheProchainTournoi($categorie)
     }
     else
     {
-        $dateProchainTournoi = $cnx->query("SELECT MIN(date) AS dateProchainTournoi FROM `tournoi` WHERE date > CURRENT_DATE AND categorie = ".$categorie);
+        $dateProchainTournoi = $cnx->query("SELECT MIN(date) AS dateProchainTournoi FROM `tournoi` WHERE (date > CURRENT_DATE) AND categorie = ".$categorie);
         $dateProchainTournoi->setFetchMode(PDO::FETCH_OBJ);
         $dateProchainTournoi = $dateProchainTournoi->fetch();
-        $nomAfficheProchainTournoi = $cnx->query("SELECT affiche FROM tournoi WHERE date = '".$dateProchainTournoi->dateProchainTournoi."'");
+        $nomAfficheProchainTournoi = $cnx->query("SELECT affiche FROM tournoi WHERE date = '".$dateProchainTournoi->dateProchainTournoi."' AND categorie = ".$categorie);
         $nomAfficheProchainTournoi->setFetchMode(PDO::FETCH_OBJ);
         $affiche = $nomAfficheProchainTournoi->fetch();
         return $affiche->affiche;
