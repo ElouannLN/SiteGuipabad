@@ -39,6 +39,7 @@ include("include/connexion.php");
             <th>Adresse</th>
             <th>Prix</th>
             <?php if($administrateur){ ?>
+            <th>Modifier</th>
             <th>Supprimer</th>
             <?php } ?>
           </tr>
@@ -60,8 +61,17 @@ include("include/connexion.php");
           <td><?php echo $unTournoi->adresse ?></td>
           <td><?php echo $unTournoi->inscription ?></td>
           <?php if($administrateur){ ?>
+          <td class="caseModifierTournoi">
+            <div>
+                <p>Modifier</p>
+            </div>
+          </td>
           <td class="caseSupprimerTournoi">
-            <a class="lienSupprimerTournoi" href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>"> Supprimer </a>
+            <div>
+              <a href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>">
+                <p>Supprimer</p>
+              </a>
+            </div>
           </td>
           <?php } ?>
         </tr>
@@ -81,6 +91,7 @@ include("include/connexion.php");
             <th>Adresse</th>
             <th>Prix</th>
             <?php if($administrateur){ ?>
+            <th>Modifier</th>
             <th>Supprimer</th>
             <?php } ?>
           </tr>
@@ -102,8 +113,19 @@ include("include/connexion.php");
           <td><?php echo $unTournoi->adresse ?></td>
           <td><?php echo $unTournoi->inscription ?></td>
           <?php if($administrateur){ ?>
-          <td><a href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>">
-            <img src="image/croix.png" alt="supprimer"></a>
+          <td class="caseModifierTournoi">
+            <div>
+              <a href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>">
+                <p>Modifier</p>
+              </a>
+            </div>
+          </td>
+          <td class="caseSupprimerTournoi">
+            <div>
+              <a href="gestionTournoi.php?suppression=<?php echo $unTournoi->id; ?>">
+                <p>Supprimer</p>
+              </a>
+            </div>
           </td>
           <?php } ?>
         </tr>
@@ -111,5 +133,39 @@ include("include/connexion.php");
         </table>
       </div>
     </div>
+    <script>
+        var unObjetXHR = new XMLHttpRequest();
+        unObjetXHR.open('GET',"envoyerTournoi.php?id=42");
+        unObjetXHR.send(null);
+        unObjetXHR.addEventListener("readystatechange",function(){
+            if(unObjetXHR.readyState === XMLHttpRequest.DONE)
+            {
+              //Stock le document dans une variable
+              var leDocXML = unObjetXHR.responseXML;
+              var leTournoi = leDocXML.childNodes[0].childNodes;
+              var data = "";
+              for(var i = 0;i < leTournoi.length;i++)
+              {
+                if(leTournoi[i].childNodes[0] != undefined)
+                {
+                  data = leTournoi[i].childNodes[0].nodeValue;
+                }
+              }
+            }
+
+
+            //nextSibling
+            //getElementsByTagName('tournoi')
+            //hasChildNodes()
+            //nodeType
+        });
+        function disparitionForm()
+        {
+          var formulaire = document.querySelector(".formAjouterTournoi table");
+          formulaire.style.width = "0";
+          formulaire.style.height = "0";
+        }
+        disparitionForm();
+    </script>
   </body>
 </html>
