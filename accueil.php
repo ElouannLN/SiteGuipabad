@@ -18,7 +18,7 @@
           <img class="ImageSlider" src="image/ClubAdultes.jpg" alt="Image du slider d'accueil">
          </figure>
        </div>
-      <h2 class="actusbref">L'ACTU EN BREF !</h2>
+      <h2 class="actusbref">L'actu en bref !</h2>
         <p class="textactusbref">Le club de Coatodon est enfin dissous ! <br/>
                                  Plumy enfin dèrrière les barreaux ? <br/>
                                  Le badminton, nouveau symbole du communisme.</p>
@@ -30,15 +30,15 @@
         <p class="Reponseclub"> Salle de Keranna, à Guipavas !<br/>(proche du superU)</p>
         <p class="Questionclub">Quelles sont les horaires ?<br/></p>
         <p class="Categorieinfosclub">Pour les jeunes :<br/></p>
-        <p class="Reponseclub">le mardi, de 18H30 à 20H.<br/></p>
+        <p class="Reponseclub">Le mardi, de 18H30 à 20H.<br/></p>
         <p class="Categorieinfosclub">Pour les Adultes : </br></p>
-        <p class="Reponseclub">les mardis et jeudis, de 20H30 à 22H30.<br/></p>
+        <p class="Reponseclub">Les mardis et jeudis, de 20H30 à 22H30.<br/></p>
         <p class="Plusdinfosclub">- Plus d'informations <a href="inscriptions.php">ici</a>. -</p>
 
      </div>
     </div>
 
-     <h1 class="actualités">Actualites :</h1>
+     <h1 class="actualites">Actualités</h1>
       <p class="news">
       </p>
       <script type="text/javascript" scr="include/script.js"></script>
