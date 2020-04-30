@@ -6,7 +6,7 @@ include("include/connexion.php");
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Tournois</title>
+    <title>Tournois | Guipavas Badminton</title>
     <link rel="stylesheet" href="include/style.css">
   </head>
   <body>

@@ -3,7 +3,7 @@
 <html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-      <title>Site internet de Guipavas Badminton | Bienvenue !</title>
+      <title>Acceuil | Guipavas Badminton</title>
     <link rel="stylesheet" href="include/style.css">
   </head>
 

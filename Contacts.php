@@ -1,21 +1,15 @@
 <?php session_start(); ?>
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="fr" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+      <title>Contacts | Guipavas Badminton </title>
+    <link rel="stylesheet" href="include/style.css">
   </head>
+
   <body>
-    <?php
-    include ("include/connexion.php");
-    $hentai = $cnx->query("SELECT * FROM tournoi");
-    $hentai->setFetchMode(PDO::FETCH_OBJ);
-    $furry = $hentai->fetch();
-    echo $furry->tournoi;
+    <?php include("include/menu.php"); ?>
 
-
-    ?>
-
-    <p>Hello the world !</p>
+      <script type="text/javascript" scr="include/script.js"></script>
   </body>
 </html>
