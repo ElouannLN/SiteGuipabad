@@ -421,6 +421,8 @@ padding: 0.75vh;
   margin-left:auto;
   margin-right:auto;
   border: 3px solid rgba(79, 111, 188, 0.8);
+  overflow: hidden;
+  transition-duration: 2s;
 }
 
 .mainTournoi
@@ -441,8 +443,11 @@ padding: 0.75vh;
   flex-direction: column;
 }
 
+/* Tableau des tournois */
+
 .tableauAffichageTournoi
 {
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -462,31 +467,48 @@ padding: 0.75vh;
   max-width: 95vw;
 }
 
-.tableauAffichageTournoi tr td a
-{
-  display: block;
-  width: 100%;
-  height: 100%;
-}
+/* Case supprimer un tournoi*/
 
-.tournoiProche
+.caseSupprimerTournoi div
 {
-  background-color: rgba(79, 111, 188, 0.8);
-}
-
-.tableauAffichageTournoi tr td a img
-{
-  max-width: 2vw;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  color: white;
 }
 
 .caseSupprimerTournoi:hover
 {
   transition-duration: 0.4s;
   background-color: tomato;
-  color: rgb(255, 255, 255);
   cursor: pointer;
 }
+
+.caseSupprimerTournoi:hover a p
+{
+  color: white;
+}
+
+/* Case modifier un tournoi*/
+
+.caseModifierTournoi div
+{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.caseModifierTournoi:hover
+{
+  transition-duration: 0.4s;
+  background-color: rgb(81, 151, 255);
+  cursor: pointer;
+}
+
+.caseModifierTournoi:hover div p
+{
+  color: white;
+}
+
+/* Affichage du tournoi le plus récent */
 
 .afficheTournoiRecent
 {
@@ -495,6 +517,13 @@ padding: 0.75vh;
   margin-left: auto;
   margin-right: auto;
 }
+
+.tournoiProche
+{
+  background-color: rgba(79, 111, 188, 0.8);
+}
+
+/* Bouton de création du PDF des tournois */
 
 .lienPdf
 {
@@ -528,3 +557,7 @@ padding: 0.75vh;
   background-color: white;
   color: rgb(255, 113, 113);
 }
+
+/*----------------------------------------------------------------------------*/
+/*PAGE ?*/
+/*----------------------------------------------------------------------------*/
