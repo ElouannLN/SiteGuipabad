@@ -46,7 +46,7 @@ a
 
 .supmenu
 {
-  background: url("../image/FondMenu.jpg") no-repeat center/250vh;
+  background: url("../image/FondMenu.jpg") no-repeat center/125%;
   background-position: right 80% top 50%;
   border-bottom: 1vh double white;
   display: flex;
@@ -413,6 +413,51 @@ padding: 0.75vh;
 }
 
 
+/*----------------------------------------------------------------------------*/
+/*PAGE DES INSCRIPTIONS*/
+/*----------------------------------------------------------------------------*/
+
+.tableauTarifs
+{
+  width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.tableauTarifs tr th
+{
+  background-color: rgba(79, 111, 188, 0.8);
+  color: white;
+}
+
+.tableauTarifs tr td
+{
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px solid rgba(79, 111, 188, 0.8);
+  max-width: 95vw;
+}
+
+.titreInscriptions
+{
+ margin-top: 5vh;
+ padding-top: 2vh;
+ padding-bottom: 2vh;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 0px;
+ color: white;
+ background-color: rgb(79, 111, 188, 0.80);
+ font-size: 4.5vh;
+ text-align: center;
+ font-weight: bold;
+ border-top: 1vh double white;
+ border-bottom: 1vh double white;
+}
+
 
 /*----------------------------------------------------------------------------*/
 /*PAGE DES TOURNOIS*/
@@ -421,11 +466,21 @@ padding: 0.75vh;
 
 .titrePageTournoi
 {
-  color: rgba(79, 111, 188, 0.8);
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-decoration: underline;
+   margin-top: 5vh;
+   padding-top: 2vh;
+   padding-bottom: 2vh;
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 0px;
+   color: white;
+   background-color: rgb(79, 111, 188, 0.80);
+   font-size: 4.5vh;
+   text-align: center;
+   font-weight: bold;
+   border-top: 1vh double white;
+   border-bottom: 1vh double white;  
 }
 
 .formAjouterTournoi table

@@ -11,7 +11,6 @@ include("include/connexion.php");
   </head>
   <body>
     <?php include("include/menu.php"); ?>
-    <h1 class="titrePageTournoi">Tournois</h1>
     <?php
     $administrateur = false;
     if(isset($_SESSION["privilege"])) //Si l'utilisateur est connecté
