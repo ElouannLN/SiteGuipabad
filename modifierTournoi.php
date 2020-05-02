@@ -25,7 +25,7 @@ if(isset($_SESSION["privilege"]))
                         <table>
                             <tr>
                                 <td><label for="tournoi">Nom du tournoi :</label></td>
-                                <td><input type="text" id="tournoi" name="ajouterTournoi" required value="<?php echo $leTournoi->tournoi; ?>"></td>
+                                <td><input type="text" id="tournoi" name="modifierTournoi" required value="<?php echo $leTournoi->tournoi; ?>"></td>
                             </tr>
                             <tr>
                                 <td><label for="club">Nom du club</label></td>
