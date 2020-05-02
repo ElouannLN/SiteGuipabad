@@ -41,4 +41,26 @@ function afficheProchainTournoi($categorie)
     }
 };
 
+
+//Fonction qui permet de verifier si 2 tournois utilisent le meme fichier d'affiche
+//Retourne true si le tournoi passé en paramètre partage son affiche avec un autre tournoi
+function verificationMemeAfficheTournoi($id)
+{
+    include("connexion.php");
+    $leTournoi = $cnx->query("SELECT * FROM `tournoi` WHERE id =".$id);
+    $leTournoi->setFetchMode(PDO::FETCH_OBJ);
+    $leTournoi = $leTournoi->fetch();
+    $nbTournoi = $cnx->query("SELECT COUNT(*) AS nbTournoi FROM `tournoi` WHERE affiche = ".$leTournoi->affiche);
+    $nbTournoi->setFetchMode(PDO::FETCH_OBJ);
+    $nbTournoi = $nbTournoi->fetch();
+    if($nbTournoi->nbTournoi > 1)
+    {
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
 ?>
