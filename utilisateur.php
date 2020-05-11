@@ -1,10 +1,13 @@
 <?php
+//Page permettant de creer un utilisateur
+//Modification nécessaire :
+//Sécuriser la requete SQL grâce à une bindValue
 session_start();
 include("include/connexion.php");
 if (isset($_POST["identifiant"]))
 {
   $identifiant = $_POST["identifiant"];
-  $mdp = $_POST["mdp"];
+  $mdp = hash("sha256",$_POST["mdp"]);
   $email = $_POST["email"];
   $nom = $_POST["mdp"];
   $prenom = $_POST["prenom"];

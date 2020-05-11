@@ -864,3 +864,25 @@ flex-direction: column;
   max-width: 90vw;
   max-height: 90vh;
 }
+
+/*----------------------------------------------------------------------------*/
+/*PAGE Chat*/
+/*----------------------------------------------------------------------------*/
+
+.chatFenetre
+{
+  bottom:20px;
+  right:20px;
+  position:fixed;
+  width:20vw;
+  height:30vh;
+  border:1px black solid;
+  display:flex;
+  flex-direction:column;
+  overflow:auto;
+}
+.chatFenetre p
+{
+  border-radius:12%;
+  background-color:gray;
+}

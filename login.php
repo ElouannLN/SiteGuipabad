@@ -2,7 +2,8 @@
 
 include("include/connexion.php");
 
-$mdp = $_POST["mdp"]; //Récupération du mot de passe venant du formulaire
+$mdp = hash("sha256",$_POST["mdp"]); //Récupération du mot de passe venant du formulaire
+echo $mdp;
 $identifiant = $_POST["identifiant"]; //Récupération de l'identifiant venant du formulaire
 //Récupération des résultats de la requête SQL qui retourne le nombre
 //d'utilisateur correspondant à un identifiant ou un email
@@ -22,8 +23,10 @@ if($resultat->resultat == 1)
     echo "Bonjour ".$unUtilisateur->prenom." ".$unUtilisateur->nom;
     session_start();
     $_SESSION ["privilege"] = $unUtilisateur->privilege;
+    $_SESSION ["identifiant"] = $unUtilisateur->identifiant;
     $_SESSION ["prenom"] = $unUtilisateur->prenom;
     $_SESSION ["nom"] = $unUtilisateur->nom;
+    $_SESSION ["mdp"] = $unUtilisateur->mdp;
     header('Location: accueil.php');
   }
   else
