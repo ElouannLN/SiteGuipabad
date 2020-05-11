@@ -152,7 +152,7 @@ include("include/connexion.php");
                   data = leTournoi[i].childNodes[0].nodeValue;
                 }
               }
-            }
+            } 
             //nextSibling
             //getElementsByTagName('tournoi')
             //hasChildNodes()

@@ -1,12 +1,5 @@
 <?php
-session_start();
-include("connexion.php");
-
-$categorie = 1;
-
-$req = $cnx->prepare("SELECT * FROM tournois WHERE categorie = :categorie");
-$req->bindValue(':categorie',$categorie,PDO::PARAM_INT);
-$resultats = $req->execute();
-$resultats->setFetchMode(PDO::FETCH_OBJ);
-$resultats = $resultats->fetch();
-echo $resultats->tournoi;
+include("dao.php");
+$connexion = new DAO();
+echo $connexion->getNiveauConnexion("imiszczu","1a541a576e22e57ad6a1e5e60494ec36c3d480bf09fe7b52970b6ae5a5f0688e");
+echo $connexion->existePseudoUtilisateur("imiszczu");
