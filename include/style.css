@@ -627,6 +627,49 @@ flex-direction: column;
  background-color: rgb(79, 111, 188, 0.50);
 }
 
+.conteneurMaillots
+{
+width: 100%;
+height: auto;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+flex-direction: column;
+}
+
+.titreMaillots
+{
+ margin-top: 5vh;
+ padding-top: 2vh;
+ padding-bottom: 2vh;
+ width: 35%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 0px;
+ color: white;
+ background-color: rgb(79, 111, 188, 0.80);
+ font-size: 4.5vh;
+ text-align: center;
+ font-weight: bold;
+ border-top: 1vh double white;
+ border-bottom: 1vh double white;
+ border-radius: 10px 0 0 10px;
+}
+
+.messageMaillots
+{
+ color: black;
+ font-family: fantasy;
+ font-size: 15px;
+ text-align: right;
+ padding: 2%;
+ margin: 1%;
+ border-radius: 10px 10px 10px 10px;
+ background-color: rgb(79, 111, 188, 0.50);
+}
+
+
 /*----------------------------------------------------------------------------*/
 /*PAGE DES TOURNOIS*/
 /*----------------------------------------------------------------------------*/

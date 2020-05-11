@@ -16,10 +16,10 @@
       <div class="conteneurPrésentationClub">
 
         <h2 class="titrePresentationClub">Qu'est ce que Guipabad ?</h2>
-        <p class="messagePresentationClub"> Guipabad est un club de Badminton bénévol de renomée (presque) mondiale situé au centre ville de Guipavas <br>
-          Le club propose des entraînements réguliers pour jeunes et adultes tout au long de l'année ! Lors des periodes scolaires, les scéances jeunes <br>
-          ont lieux tous les mardis de 18h30 à 20h. Pour les adultes les entraînements ont lieux tous les mardis et jeudi de 20H30 à 22H30. Durant les vacances <br>
-          Les jeunes badistes sont le bienvenue aux entraînements adultes qui sont maintenus toute l'année (hors jours feriés, et encore !).</p>
+        <p class="messagePresentationClub"> Guipabad est un club de Badminton bénévol de renomée (presque) mondiale situé au centre ville de Guipavas.<br>
+          Il propose des entraînements réguliers pour jeunes et adultes tout au long de l'année ! Lors des periodes scolaires, les scéances jeunes <br>
+          ont lieux tous les mardis de 18h30 à 20h. Pour les adultes, les entraînements ont lieux tous les mardis et jeudis de 20H30 à 22H30. Durant les vacances <br>
+          Les jeunes badistes sont les bienvenues aux entraînements adultes qui sont maintenus tout le long de l'année (hors jours feriés, et encore !).</p>
       </div>
 
       <div class="conteneurTarifs">
@@ -53,15 +53,24 @@
         <div class="conteneurAmicaleUfolep">
 
           <h2 class="titreAmicaleUfolep">Amicale Laïque et Ufolep</h2>
-          <p class="messageAmicaleUfolep"> Le club de Guipavas fait partit de deux organisations qui permettent à ses différents membres de bénéficier de plusieurs avantages :<br>
-          - L'amicale laïque de Guipavas, dont dépend le club, permet notamment la possibilité des tarifs réduits vu plus haut, mais aussi la possibilité de bénéficier <br>
-          de tarifs avantageux sur les activités multiples dans la mesure suivante : "Activité la plus chère au tarif plein, les activités suivantes à 50%". <br>
-          - L'Ufolep, qui est la fédération du club, et qui permet à ses membres de participer à deux circuits tout au long de l'année. Les tournois, qui sont organisés <br>
-          par les clubs membres et qui permettent d'aller affronter de nombreux badistes de la région le temps d'une journée (pour les jeunes) ou d'une soirée (pour les adultes). <br>
-          Les championnats qui permettent à chaque club de s'affronter de manière régulière, avec des adversaires d'un niveau équivalent. Les inscriptions aux championnats se font <br>
-          au début de l'année auprès de notre chère présidente, ou au cours de l'année sur demande exeptionnelle.</p>
+          <p class="messageAmicaleUfolep"> Le club de Guipavas dépend de deux organisations qui permettent à ses différents membres de bénéficier de plusieurs avantages :<br>
+          - L'amicale laïque de Guipavas, dont dépend le club, permet notamment la disponibilité des tarifs réduits vus plus haut, mais aussi la possibilité de bénéficier <br>
+          de tarifs avantageux sur les activités multiples dans la mesure suivante : "l'activité la plus chère au tarif plein, les activités suivantes à -50%". <br> <br>
 
+          - L'Ufolep, qui est la fédération du club, et qui permet à ses membres de participer à deux circuits tout au long de l'année : <br>
+          Les tournois, qui sont organisés par les clubs et qui permettent d'aller affronter de nombreux badistes de la région ;<br>
+          Les championnats qui permettent à chaque club de s'affronter de manière régulière avec des adversaires d'un niveau équivalent,<br>
+          et dont les inscriptions se font au début de l'année auprès de notre chère présidente, ou au cours de l'année sur demande exeptionnelle.</p>
         </div>
+
+      <div class="conteneurMaillots">
+
+        <h2 class="titreMaillots">Maillots du club</h2>
+        <p class="messageMaillots"> Il est possible d'acheter un maillot à l'éfigie du club afin d'avoir un maximum de style sur le terrain. <br>
+        Celui-ci est disponible à la vente au prix de 15€.<br>
+        La demande se fait (comme toujours) auprès de notre super présidente lors des scéances adultes ! <br>
+        Il est d'ailleurs possible de tester les différentes tailles avant de confirmer votre achat.</p>
+      </div>
 
 
 
