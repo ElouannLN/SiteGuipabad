@@ -41,6 +41,21 @@ a
   color: black;
 }
 
+th
+{
+ font-family: fantasy;
+}
+
+td
+{
+ font-family: fantasy;
+}
+
+tr
+{
+ font-family: fantasy;
+}
+
 @keyframes slider {
   0%   {left: 0%;}
   25%  {left: 0%;}
@@ -433,28 +448,6 @@ padding: 0.75vh;
 /*PAGE DES INSCRIPTIONS*/
 /*----------------------------------------------------------------------------*/
 
-.tableauTarifs
-{
-  width: 95%;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.tableauTarifs tr th
-{
-  background-color: rgba(79, 111, 188, 0.8);
-  color: white;
-}
-
-.tableauTarifs tr td
-{
-  padding-right: 5px;
-  padding-left: 5px;
-  border: 1px solid rgba(79, 111, 188, 0.8);
-  max-width: 95vw;
-}
-
 .titreInscriptions
 {
  margin-top: 5vh;
@@ -474,6 +467,165 @@ padding: 0.75vh;
  border-bottom: 1vh double white;
 }
 
+.pageInscriptions
+{
+  width: 100%;
+  height: auto;
+}
+
+.conteneurPrésentationClub
+{
+width: 100%;
+height: auto;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.titrePresentationClub
+{
+ margin-top: 5vh;
+ padding-top: 2vh;
+ padding-bottom: 2vh;
+ width: 35%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 0px;
+ color: white;
+ background-color: rgb(79, 111, 188, 0.80);
+ font-size: 4.5vh;
+ text-align: center;
+ font-weight: bold;
+ border-top: 1vh double white;
+ border-bottom: 1vh double white;
+ border-radius: 0 10px 10px 0;
+}
+
+.messagePresentationClub
+{
+ color: black;
+ font-family: fantasy;
+ font-size: 15px;
+ text-align: left;
+ padding: 2%;
+ margin: 1%;
+ border-radius: 10px 10px 10px 10px;
+ background-color: rgb(79, 111, 188, 0.50);
+}
+
+.conteneurTarifs
+{
+width: 100%;
+height: auto;
+display: flex;
+align-items: flex-end;
+justify-content: flex-end;
+flex-direction: column;
+}
+
+.conteneurTableauEtTexte
+{
+border-radius: 10px 10px 10px 10px;
+background-color: rgb(79, 111, 188, 0.50);
+padding: 2%;
+margin: 1%;
+display: flex;
+flex-direction: column;
+align-items: flex-end;
+}
+
+.titreTarifs
+{
+ margin-top: 5vh;
+ padding-top: 2vh;
+ padding-bottom: 2vh;
+ width: 35%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 0px;
+ color: white;
+ background-color: rgb(79, 111, 188, 0.80);
+ font-size: 4.5vh;
+ text-align: center;
+ font-weight: bold;
+ border-top: 1vh double white;
+ border-bottom: 1vh double white;
+ border-radius: 10px 0 0 10px;
+}
+
+.messageTarifs
+{
+ color: black;
+ font-family: fantasy;
+ font-size: 15px;
+ text-align: right;
+}
+
+.tableauTarifs
+{
+  width: 100%;
+  text-align: center;
+}
+
+.tableauTarifs tr th
+{
+  background-color: rgba(79, 111, 188, 0.8);
+  color: white;
+}
+
+.tableauTarifs tr td
+{
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 1px solid rgba(79, 111, 188, 0.8);
+  max-width: 95vw;
+  background-color:white;
+}
+
+.conteneurAmicaleUfolep
+{
+width: 100%;
+height: auto;
+display: flex;
+align-items: flex-start;
+justify-content: flex-start;
+flex-direction: column;
+}
+
+.titreAmicaleUfolep
+{
+ margin-top: 5vh;
+ padding-top: 2vh;
+ padding-bottom: 2vh;
+ width: 35%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-bottom: 0px;
+ color: white;
+ background-color: rgb(79, 111, 188, 0.80);
+ font-size: 4.5vh;
+ text-align: center;
+ font-weight: bold;
+ border-top: 1vh double white;
+ border-bottom: 1vh double white;
+ border-radius: 0 10px 10px 0;
+}
+
+.messageAmicaleUfolep
+{
+ color: black;
+ font-family: fantasy;
+ font-size: 15px;
+ text-align: left;
+ padding: 2%;
+ margin: 1%;
+ border-radius: 10px 10px 10px 10px;
+ background-color: rgb(79, 111, 188, 0.50);
+}
 
 /*----------------------------------------------------------------------------*/
 /*PAGE DES TOURNOIS*/
