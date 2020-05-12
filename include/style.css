@@ -903,6 +903,7 @@ flex-direction: column;
 .chatConversation
 {
   overflow:auto;
+  scroll-behavior: smooth;
 }
 
 .chatBarreCommunication

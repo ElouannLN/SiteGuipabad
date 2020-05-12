@@ -28,12 +28,17 @@ if(isset($_SESSION["privilege"]))
         <script>
         var boutonEnvoyerMessage = document.querySelector(".chatBoutonEnvoyerMessage");
         var inputMessage = document.querySelector(".chatEcrireMessage");
+        var conversation = document.querySelector(".chatConversation");
         boutonEnvoyerMessage.addEventListener("click",function(e){
             var message = document.createElement("p");
             message.innerText = inputMessage.value;
             document.querySelector(".chatConversation").appendChild(message);
             inputMessage.value = "";
+            conversation.scrollTop = conversation.scrollHeight;
         });
+
+
+
         var identifiant = "<?php echo $_SESSION["identifiant"]; ?>";
         var mdp = "<?php echo $_SESSION["mdp"]; ?>";
         var idAuteur = 1, idReceveur = 2;
@@ -57,7 +62,7 @@ if(isset($_SESSION["privilege"]))
                             var yolo = leMessage[j].childNodes[0].nodeValue;
                             var message = document.createElement("p");
                             message.innerText = yolo;
-                            document.querySelector(".chatConversation").appendChild(message);
+                            conversation.appendChild(message);
                         }
                     }
                 }
