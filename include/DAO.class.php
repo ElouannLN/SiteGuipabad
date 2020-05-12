@@ -1,4 +1,5 @@
 <?php
+include("Message.class.php");
 class DAO
 {
     // ------------------------------------------------------------------------------------------------------
@@ -68,6 +69,20 @@ class DAO
         $niveauConnexion = $uneLigne->privilege;
         $requete->closeCursor();
         return $niveauConnexion;
+    }
+
+    public function getToutLesMessages()
+    {
+        $requeteSQLText = "SELECT * FROM message ORDER BY date";
+        $lesMessages = $this->cnx->query($requeteSQLText);
+        $lesMessages->setFetchMode(PDO::FETCH_OBJ);
+        $tableauMessage = array();
+        while($unMessage = $lesMessages->fetch())
+        {
+            $leMessage = new Message($unMessage->id,$unMessage->idAuteur,$unMessage->idReceveur,$unMessage->contenu,$unMessage->date,$unMessage->heure);
+            $tableauMessage[] = $leMessage;
+        }
+        return $tableauMessage;
     }
     
 }

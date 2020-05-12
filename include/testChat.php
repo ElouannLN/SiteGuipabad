@@ -12,8 +12,28 @@ if(isset($_SESSION["privilege"]))
     </head>
     <body>
         <div class="chatFenetre">
+            <div class="chatEntete">
+                Ceci est le chat
+            </div>
+
+            <div class="chatConversation">
+
+            </div>
+
+            <div class="chatBarreCommunication">
+                <input type="text" class="chatEcrireMessage">
+                <div class="chatBoutonEnvoyerMessage"></div>
+            </div>
         </div>
         <script>
+        var boutonEnvoyerMessage = document.querySelector(".chatBoutonEnvoyerMessage");
+        var inputMessage = document.querySelector(".chatEcrireMessage");
+        boutonEnvoyerMessage.addEventListener("click",function(e){
+            var message = document.createElement("p");
+            message.innerText = inputMessage.value;
+            document.querySelector(".chatConversation").appendChild(message);
+            inputMessage.value = "";
+        });
         var identifiant = "<?php echo $_SESSION["identifiant"]; ?>";
         var mdp = "<?php echo $_SESSION["mdp"]; ?>";
         var idAuteur = 1, idReceveur = 2;
@@ -37,12 +57,13 @@ if(isset($_SESSION["privilege"]))
                             var yolo = leMessage[j].childNodes[0].nodeValue;
                             var message = document.createElement("p");
                             message.innerText = yolo;
-                            document.querySelector(".chatFenetre").appendChild(message);
+                            document.querySelector(".chatConversation").appendChild(message);
                         }
                     }
                 }
             }
         });
+
         </script>
     </body>
     </html>

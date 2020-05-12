@@ -7,24 +7,39 @@
 
 
 
-@media (max-height: 600px) {
+@media (max-height: 600px)
+{
   .Carteetinfosclub
   {
     display: none;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 600px)
+{
   .Carteetinfosclub
   {
    display: flex;
   }
 }
 
-@media (min-height: 600px) {
+@media (min-height: 600px)
+{
   .Carteetinfosclub
   {
    display: flex;
+  }
+}
+
+@keyframes apparition
+{
+  from
+  {
+    opacity: 0;
+  }
+  to
+  {
+    opacity: 1;
   }
 }
 
@@ -33,6 +48,7 @@ body
  padding: 0px;
  margin: 0px;
  background-color: white;
+ animation: apparition 1s;
 }
 
 a
@@ -335,12 +351,6 @@ font-family: fantasy;
  font-weight: bold;
  border-top: 1vh double white;
  border-bottom: 1vh double white;
-}
-
-.news
-{
-
-
 }
 
 
@@ -836,10 +846,57 @@ flex-direction: column;
   border:1px black solid;
   display:flex;
   flex-direction:column;
+}
+
+.chatEntete
+{
+  height: 15%;
+  border: 1px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.chatConversation
+{
   overflow:auto;
 }
-.chatFenetre p
+
+.chatBarreCommunication
 {
-  border-radius:12%;
-  background-color:gray;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
 }
+
+.chatEcrireMessage
+{
+  width: 75%;
+  height: 100%;
+}
+
+.chatBoutonEnvoyerMessage
+{
+  width: 25%;
+  height: 100%;
+  background-color: grey;
+  cursor: pointer;
+}
+
+/*
+Structure du chat :
+        <div class="chatFenetre">
+            <div class="chatEntete">
+                Ceci est le chat
+            </div>
+
+            <div class="chatConversation">
+              <p>Ceci est un message</p>
+            </div>
+
+            <div class="chatBarreCommunication">
+                <input type="text" class="chatEcrireMessage">
+                <div class="chatBoutonEnvoyerMessage"></div>
+            </div>
+        </div>
+*/
