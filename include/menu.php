@@ -31,11 +31,14 @@
   </div>
 
   <div class=undermenu>
-    <a class="menulien" href="accueil.php">Accueil</a>
+    <a class="menulien" href="accueil.php">Actualités</a>
     <a class="menulien" href="tournois.php">Tournois</a>
     <a class="menulien" href="inscriptions.php">Inscriptions</a>
     <a class="menulien" href="contacts.php">Contacts</a>
-    <a class="menulien" href="photos.php">Galerie photos</a>
-    <a class="menulien" href="presse.php">Articles de presse</a>
+      <div class="menuArchives">
+        <p class="menulienArchives">Archives</p>
+        <a class="menulien" href="Photos.php">Photos</a>
+        <a class="menulien" href="Presse.php">Presse</a>
+      </div>
   </div>
 </div>

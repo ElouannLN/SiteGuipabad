@@ -10,7 +10,7 @@
   <body>
     <?php include("include/menu.php"); ?>
 
-    <h1 class="titreInscriptions">Modalités d'inscriptions</h1>
+    <h1 class="titrePage">Modalités d'inscriptions</h1>
 
     <div class="pageInscriptions">
       <div class="conteneurPrésentationClub">
@@ -66,12 +66,15 @@
       <div class="conteneurMaillots">
 
         <h2 class="titreMaillots">Maillots du club</h2>
-        <p class="messageMaillots"> Il est possible d'acheter un maillot à l'éfigie du club afin d'avoir un maximum de style sur le terrain. <br>
-        Celui-ci est disponible à la vente au prix de 15€.<br>
-        La demande se fait (comme toujours) auprès de notre super présidente lors des scéances adultes ! <br>
-        Il est d'ailleurs possible de tester les différentes tailles avant de confirmer votre achat.</p>
+         <! <div class="conteneurSliderMaillotsEtMessageMaillots">
+          <p class="messageMaillots"> Il est possible d'acheter un maillot à l'éfigie du club afin d'avoir un maximum de style sur le terrain ! <br>
+          Celui-ci est disponible au prix de 15€, Homme ou Femme avec des tailles allants de S à XXL.<br>
+          La demande se fait (comme toujours) auprès de notre super présidente lors des scéances adultes ! <br>
+          Il est d'ailleurs possible de tester les différentes tailles avant de confirmer votre achat.</p>
+          <div class="sliderMaillots">
+          </div>
+         <! </div>
       </div>
-
 
 
     </div>
