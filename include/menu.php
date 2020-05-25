@@ -31,14 +31,20 @@
   </div>
 
   <div class=undermenu>
-    <a class="menulien" href="accueil.php">Actualités</a>
-    <a class="menulien" href="tournois.php">Tournois</a>
-    <a class="menulien" href="inscriptions.php">Inscriptions</a>
-    <a class="menulien" href="contacts.php">Contacts</a>
-      <div class="menuArchives">
-        <p class="menulienArchives">Archives</p>
-        <a class="menulien" href="Photos.php">Photos</a>
-        <a class="menulien" href="Presse.php">Presse</a>
-      </div>
+    <nav>
+      <ul>
+        <li><a class="menuLien" href="accueil.php">Actualités</a></li>
+        <li><a class="menuLien" href="tournois.php">Tournois</a></li>
+        <li><a class="menuLien" href="inscriptions.php">Inscriptions</a></li>
+        <li><a class="menuLien" href="contacts.php">Contacts</a></li>
+        <li class="menuDeroulant">
+          <a class="menuLien" href="">Archives</a>
+          <ul class="sousMenu">
+            <li><a class="menuLien" href="Photos.php">Photos</a></li>
+            <li><a class="menuLien" href="Presse.php">Presse</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>

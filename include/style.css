@@ -201,51 +201,80 @@ font-family:fantasy;
 .undermenu
 {
   height: 15%;
-  display: flex;
-  justify-content: space-around;
   background-color: rgb(79, 111, 188, 0.80);
   border-bottom: 1vh double white;
-}
-
-.undermenu > *:not(.menuArchives)
-{
-display: flex;
-justify-content: center;
-align-items: center;
-}
-
-.menulien
-{
-  height: 100%;
-  color: white;
-  font-family: fantasy;
-  font-size: 1.5vw;
-}
-
-
-.menuArchives
-{
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  height: 100%;
+  align-items: center;
+}
+
+.menuLien
+{
   color: white;
   font-family: fantasy;
   font-size: 1.5vw;
-  overflow: hidden;
 }
 
-.menulienArchives
+nav
 {
- margin-top: 0px;
+    width: 100%;
+    margin: 0px;
+    top: 0px;
 }
 
-.menuArchives:hover
-{
-  height: 300%;
-  background-color: rgb(79, 111, 188, 1);
-  z-index: 1;
+nav ul{
+    list-style-type: none;
+    margin-top: 0;
+    margin-left:0;
+    padding-left:0;
 }
+
+nav ul li
+{
+    float: left;
+    width: 20%;
+    text-align: center;
+    position: relative;
+}
+
+nav a
+{
+    display: block;
+}
+
+.sousMenu
+{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav > ul li:hover .sousMenu
+{
+    display: block;
+}
+
+.sousMenu li
+{
+    float: none;
+    width: 100%;
+    text-align: center;
+}
+
+.sousMenu a
+{
+    padding: 5%;
+    border-bottom: none;
+    background-color: rgb(79, 111, 188, 0.80);
+}
+
+.menuLien
+{
+  color: white;
+  font-family: fantasy;
+  font-size: 1.5vw;
+}
+
 
 
 /*----------------------------------------------------------------------------*/
