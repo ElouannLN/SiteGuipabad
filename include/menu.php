@@ -40,8 +40,10 @@
         <li class="menuDeroulant">
           <a class="menuLien" href="">Archives</a>
           <ul class="sousMenu">
-            <li><a class="menuLien" href="Photos.php">Photos</a></li>
-            <li><a class="menuLien" href="Presse.php">Presse</a></li>
+            <div class="fondEtBordureSousMenu">
+              <li><a class="menuSousLien" href="Photos.php">Photos</a></li>
+              <li><a class="menuSousLien" href="Presse.php">Presse</a></li>
+            </div>
           </ul>
         </li>
       </ul>
