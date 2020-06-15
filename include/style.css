@@ -62,7 +62,8 @@ body
 {
  padding: 0px;
  margin: 0px;
- background-color: white;
+ background: url("../image/backgroundS4.png");
+ background-size: 30%;
  animation: apparition 1s;
 }
 
@@ -201,7 +202,7 @@ font-family:fantasy;
 .undermenu
 {
   height: 15%;
-  background-color: rgb(79, 111, 188, 0.80);
+  background-color: rgb(105, 133, 198);
   border-bottom: 1vh double white;
   display: flex;
   align-items: center;
@@ -354,7 +355,7 @@ margin-right: auto;
  align-items: center;
  margin-bottom: 0px;
  color: white;
- background-color: rgb(79, 111, 188, 0.80);
+ background-color: rgb(105, 133, 198);
  font-size: 4.5vh;
  text-align: center;
  font-weight: bold;
@@ -446,7 +447,7 @@ font-family: fantasy;
  align-items: center;
  margin-bottom: 0px;
  color: white;
- background-color: rgb(79, 111, 188, 0.80);
+ background-color: rgb(105, 133, 198);
  font-size: 4.5vh;
  text-align: center;
  font-weight: bold;
@@ -463,7 +464,7 @@ font-family: fantasy;
 {
   width: 80%;
   height: 1px;
-  background-color: rgba(79, 111, 188, 0.8);
+  background-color: rgb(105, 133, 198);
   margin-left: auto;
   margin-right: auto;
   margin-top: 1em;
@@ -497,7 +498,7 @@ font-family: fantasy;
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid rgb(79, 111, 188, 0.80);
+  border: 2px solid rgb(105, 133, 198);
   border-radius: 10px 10px 10px 10px;
   background-color: rgb(79, 111, 188, 0.50);
   transition-duration: 2s;
@@ -515,7 +516,7 @@ font-family: fantasy;
   position: absolute;
   width: 100%;
   height: 100%;
-  border: 2px solid rgb(79, 111, 188, 0.80);
+  border: 2px solid rgb(105, 133, 198);
   border-radius: 10px 10px 10px 10px;
   background-color: rgb(79, 111, 188, 0.50);
   transition-duration: 2s;
@@ -570,7 +571,7 @@ padding: 0.75vh;
  align-items: center;
  margin-bottom: 0px;
  color: white;
- background-color: rgb(79, 111, 188, 0.80);
+ background-color: rgb(105, 133, 198);
  font-size: 4.5vh;
  text-align: center;
  font-weight: bold;
@@ -605,7 +606,7 @@ flex-direction: column;
  align-items: center;
  margin-bottom: 0px;
  color: white;
- background-color: rgb(79, 111, 188, 0.80);
+ background-color: rgb(105, 133, 198);
  font-size: 4.5vh;
  text-align: center;
  font-weight: bold;
@@ -658,7 +659,7 @@ align-items: flex-end;
  align-items: center;
  margin-bottom: 0px;
  color: white;
- background-color: rgb(79, 111, 188, 0.80);
+ background-color: rgb(105, 133, 198);
  font-size: 4.5vh;
  text-align: center;
  font-weight: bold;
@@ -683,7 +684,7 @@ align-items: flex-end;
 
 .tableauTarifs tr th
 {
-  background-color: rgba(79, 111, 188, 0.8);
+  background-color: rgb(105, 133, 198);
   color: white;
 }
 
@@ -691,7 +692,7 @@ align-items: flex-end;
 {
   padding-right: 5px;
   padding-left: 5px;
-  border: 1px solid rgba(79, 111, 188, 0.8);
+  border: 1px solid rgb(105, 133, 198);
   max-width: 95vw;
   background-color:white;
 }
@@ -717,7 +718,7 @@ flex-direction: column;
  align-items: center;
  margin-bottom: 0px;
  color: white;
- background-color: rgb(79, 111, 188, 0.80);
+ background-color: rgb(105, 133, 198);
  font-size: 4.5vh;
  text-align: center;
  font-weight: bold;
@@ -759,7 +760,7 @@ flex-direction: column;
  align-items: center;
  margin-bottom: 0px;
  color: white;
- background-color: rgb(79, 111, 188, 0.80);
+ background-color: rgb(105, 133, 198);
  font-size: 4.5vh;
  text-align: center;
  font-weight: bold;
@@ -797,7 +798,7 @@ flex-direction: column;
    align-items: center;
    margin-bottom: 0px;
    color: white;
-   background-color: rgb(79, 111, 188, 0.80);
+   background-color: rgb(105, 133, 198);
    font-size: 4.5vh;
    text-align: center;
    font-weight: bold;
@@ -809,7 +810,7 @@ flex-direction: column;
 {
   margin-left:auto;
   margin-right:auto;
-  border: 3px solid rgba(79, 111, 188, 0.8);
+  border: 3px solid rgb(105, 133, 198);
   overflow: hidden;
   transition-duration: 2s;
 }
@@ -844,7 +845,7 @@ flex-direction: column;
 
 .tableauAffichageTournoi tr th
 {
-  background-color: rgba(79, 111, 188, 0.8);
+  background-color: rgb(105, 133, 198);
   color: white;
 }
 
@@ -852,7 +853,7 @@ flex-direction: column;
 {
   padding-right: 5px;
   padding-left: 5px;
-  border: 1px solid rgba(79, 111, 188, 0.8);
+  border: 1px solid rgb(105, 133, 198);
   max-width: 95vw;
 }
 
@@ -927,7 +928,7 @@ flex-direction: column;
 
 .tournoiProche
 {
-  background-color: rgba(79, 111, 188, 0.8);
+  background-color: rgb(105, 133, 198);
 }
 
 /* Bouton de création du PDF des tournois */
