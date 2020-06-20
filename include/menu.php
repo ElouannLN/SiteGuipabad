@@ -38,7 +38,7 @@
         <li><a class="menuLien" href="inscriptions.php">Inscriptions</a></li>
         <li><a class="menuLien" href="contacts.php">Contacts</a></li>
         <li class="menuDeroulant">
-          <a class="menuLien" href="">Archives</a>
+          <a class="menuLienA" href="">Archives</a>
           <ul class="sousMenu">
             <div class="fondEtBordureSousMenu">
               <li><a class="menuSousLien" href="Photos.php">Photos</a></li>

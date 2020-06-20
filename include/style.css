@@ -292,6 +292,15 @@ nav > ul li:hover .sousMenu
   transition:2s;
 }
 
+.menuLienA
+{
+  color: white;
+  font-family: fantasy;
+  font-size: 1.5vw;
+  transition:2s;
+  border-left: 1vh double white;
+}
+
 .menuSousLien
 {
   padding-top: 2.5%;
