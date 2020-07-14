@@ -19,7 +19,7 @@
         <p class="messagePresentationClub"> Guipabad est un club de Badminton bénévol de renomée (presque) mondiale situé au centre ville de Guipavas.<br>
           Il propose des entraînements réguliers pour jeunes et adultes tout au long de l'année ! Lors des periodes scolaires, les scéances jeunes <br>
           ont lieux tous les mardis de 18h30 à 20h. Pour les adultes, les entraînements ont lieux tous les mardis et jeudis de 20H30 à 22H30. Durant les vacances <br>
-          Les jeunes badistes sont les bienvenues aux entraînements adultes qui sont maintenus tout le long de l'année (hors jours feriés, et encore !).</p>
+          les jeunes badistes sont les bienvenues aux entraînements adultes qui sont maintenus tout le long de l'année (hors jours feriés, et encore !).</p>
       </div>
 
       <div class="conteneurTarifs">
@@ -66,16 +66,15 @@
       <div class="conteneurMaillots">
 
         <h2 class="titreMaillots">Maillots du club</h2>
-         <! <div class="conteneurSliderMaillotsEtMessageMaillots">
+         <div class="conteneurSliderMaillotsEtMessageMaillots">
           <p class="messageMaillots"> Il est possible d'acheter un maillot à l'éfigie du club afin d'avoir un maximum de style sur le terrain ! <br>
           Celui-ci est disponible au prix de 15€, Homme ou Femme avec des tailles allants de S à XXL.<br>
           La demande se fait (comme toujours) auprès de notre super présidente lors des scéances adultes ! <br>
           Il est d'ailleurs possible de tester les différentes tailles avant de confirmer votre achat.</p>
           <div class="sliderMaillots">
           </div>
-         <! </div>
+         </div>
       </div>
-
 
     </div>
       <script type="text/javascript" scr="include/script.js"></script>
