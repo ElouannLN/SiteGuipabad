@@ -66,11 +66,18 @@
   }
 }
 
-@keyframes slider {
+@keyframes sliderAcceuil {
   0%   {left: 0%;}
   25%  {left: 0%;}
   50%  {left: -100%;}
   75%  {left: -100%;}
+  100% {left: 0%;}
+}
+
+@keyframes sliderMaillots {
+  0%   {left: 0%;}
+  33%  {left: -100%;}
+  66%  {left: -200%;}
   100% {left: 0%;}
 }
 
@@ -335,7 +342,7 @@ nav > ul li:hover .sousMenu
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 80vh;
+  height: 90vh;
 }
 
 .caseactusbrefs
@@ -351,7 +358,8 @@ nav > ul li:hover .sousMenu
 
 .conteneurSlider
 {
-width: 60%;
+height: auto;
+width: 65%;
 overflow: hidden;
 margin-left: auto;
 margin-right: auto;
@@ -370,7 +378,7 @@ margin-right: auto;
   font-size: 0;
   left: 0;
   text-align: left;
-  animation: 20s slider infinite;
+  animation: 20s sliderAcceuil infinite;
 }
 
 .actusbref
@@ -608,11 +616,6 @@ padding: 0.75vh;
  border-bottom: 1vh double white;
 }
 
-.pageInscriptions
-{
-  width: 100%;
-  height: auto;
-}
 
 .conteneurPrésentationClub
 {
@@ -655,6 +658,8 @@ flex-direction: column;
  border-radius: 10px 10px 10px 10px;
  background-color: rgb(79, 111, 188, 0.50);
  animation: apparitionInscriptionDroite 4s;
+ width: 70%;
+ height: auto;
 }
 
 .conteneurTarifs
@@ -677,6 +682,8 @@ display: flex;
 flex-direction: column;
 align-items: flex-end;
 animation: apparitionInscriptionGauche 4s;
+width: 70%;
+height: auto;
 }
 
 .titreTarifs
@@ -705,6 +712,7 @@ animation: apparitionInscriptionGauche 4s;
  font-family: fantasy;
  font-size: 15px;
  text-align: right;
+ margin-bottom: 0px;
 }
 
 .tableauTarifs
@@ -769,6 +777,8 @@ flex-direction: column;
  border-radius: 10px 10px 10px 10px;
  background-color: rgb(79, 111, 188, 0.50);
  animation: apparitionInscriptionDroite 4s;
+ width: 70%;
+ height: auto;
 }
 
 .conteneurMaillots
@@ -803,17 +813,47 @@ flex-direction: column;
 
 .messageMaillots
 {
- color: black;
- font-family: fantasy;
- font-size: 15px;
- text-align: right;
- padding: 2%;
- margin: 1%;
- border-radius: 10px 10px 10px 10px;
- background-color: rgb(79, 111, 188, 0.50);
- animation: apparitionInscriptionGauche 4s;
+   color: black;
+   font-family: fantasy;
+   font-size: 15px;
+   text-align: right;
+   margin-bottom: 0px;
 }
 
+.conteneurSliderMaillotsEtMessageMaillots
+{
+border-radius: 10px 10px 10px 10px;
+background-color: rgb(79, 111, 188, 0.50);
+padding: 2%;
+margin: 1%;
+display: flex;
+align-items: center;
+justify-content: flex-end;
+animation: apparitionInscriptionGauche 4s;
+width: 70%;
+height: auto;
+}
+
+.conteneurSliderMaillots
+{
+  width: 30%;
+  height: auto;
+  overflow: hidden;
+  margin-right: 7%;
+}
+
+.sliderMaillots
+{
+  width: 300%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin:0;
+  padding:0;
+  left:0;
+  animation: 20s sliderMaillots infinite;
+}
 
 /*----------------------------------------------------------------------------*/
 /*PAGE DES TOURNOIS*/

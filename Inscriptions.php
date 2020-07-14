@@ -12,7 +12,6 @@
 
     <h1 class="titrePage">Modalités d'inscriptions</h1>
 
-    <div class="pageInscriptions">
       <div class="conteneurPrésentationClub">
 
         <h2 class="titrePresentationClub">Qu'est ce que Guipabad ?</h2>
@@ -20,9 +19,11 @@
           Il propose des entraînements réguliers pour jeunes et adultes tout au long de l'année ! Lors des periodes scolaires, les scéances jeunes <br>
           ont lieux tous les mardis de 18h30 à 20h. Pour les adultes, les entraînements ont lieux tous les mardis et jeudis de 20H30 à 22H30. Durant les vacances <br>
           les jeunes badistes sont les bienvenues aux entraînements adultes qui sont maintenus tout le long de l'année (hors jours feriés, et encore !).</p>
+
       </div>
 
       <div class="conteneurTarifs">
+
           <h2 class="titreTarifs">Tarifs</h2>
           <div class="conteneurTableauEtTexte">
             <table class="tableauTarifs">
@@ -49,7 +50,9 @@
               Coupon sport ou coupon culture du CCAS de Guipavas acceptés.<br>
               Possibilité de régler en plusieurs fois.</p>
           </div>
+
       </div>
+
         <div class="conteneurAmicaleUfolep">
 
           <h2 class="titreAmicaleUfolep">Amicale Laïque et Ufolep</h2>
@@ -61,22 +64,32 @@
           Les tournois, qui sont organisés par les clubs et qui permettent d'aller affronter de nombreux badistes de la région ;<br>
           Les championnats qui permettent à chaque club de s'affronter de manière régulière avec des adversaires d'un niveau équivalent,<br>
           et dont les inscriptions se font au début de l'année auprès de notre chère présidente, ou au cours de l'année sur demande exeptionnelle.</p>
+
         </div>
 
       <div class="conteneurMaillots">
 
         <h2 class="titreMaillots">Maillots du club</h2>
          <div class="conteneurSliderMaillotsEtMessageMaillots">
+          <div class="conteneurSliderMaillots">
+            <figure class="sliderMaillots">
+             <img class="ImageSliderMaillot" src="image/ClubJeunes.jpg" alt="Image du slider d'accueil">
+             <img class="ImageSliderMaillot" src="image/ClubAdultes.jpg" alt="Image du slider d'accueil">
+             <img class="ImageSliderMaillot" src="image/ClubAdultes.jpg" alt="Image du slider d'accueil">
+            </figure>
+          </div>
           <p class="messageMaillots"> Il est possible d'acheter un maillot à l'éfigie du club afin d'avoir un maximum de style sur le terrain ! <br>
           Celui-ci est disponible au prix de 15€, Homme ou Femme avec des tailles allants de S à XXL.<br>
           La demande se fait (comme toujours) auprès de notre super présidente lors des scéances adultes ! <br>
-          Il est d'ailleurs possible de tester les différentes tailles avant de confirmer votre achat.</p>
-          <div class="sliderMaillots">
-          </div>
+          Il est d'ailleurs possible de tester les différentes tailles avant de confirmer votre achat.<br><br>
+          Pour les jeunes, un maillot est offert lors de l'inscription. Celui-ci est d'une couleur <br>
+          plus foncé que celui des adultes (voir photos ci-contre).</p>
          </div>
+
+
+
       </div>
 
-    </div>
       <script type="text/javascript" scr="include/script.js"></script>
   </body>
 </html>
