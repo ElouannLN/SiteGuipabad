@@ -38,11 +38,11 @@
         <li><a class="menuLien" href="inscriptions.php">Inscriptions</a></li>
         <li><a class="menuLien" href="contacts.php">Contacts</a></li>
         <li class="menuDeroulant">
-          <a class="menuLienA" href="">Archives</a>
+          <a class="menuLienA" href="archives.php">Archives</a>
           <ul class="sousMenu">
             <div class="fondEtBordureSousMenu">
-              <li><a class="menuSousLien" href="Photos.php">Photos</a></li>
-              <li><a class="menuSousLien" href="Presse.php">Presse</a></li>
+              <li><a class="menuSousLien" href="archives.php">Photos</a></li>
+              <li><a class="menuSousLien" href="archives.php">Presse</a></li>
             </div>
           </ul>
         </li>
