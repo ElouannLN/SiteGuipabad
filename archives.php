@@ -43,12 +43,25 @@
     </form>
 
     <?php
-     $lesImages = $cnx->query("SELECT * FROM image");
-     $lesImages->setFetchMode(PDO::FETCH_OBJ);
-     while($uneImage = $lesImages->fetch())
-      { ?>
-        <img src="imageGallerie/<?php echo $uneImage->nom_image; ?>">
-      <?php } ?>
+     $lesSections = $cnx->query("SELECT * FROM section");
+     $lesSections->setFetchMode(PDO::FETCH_OBJ);
+     while ($uneSection = $lesSections->fetch())
+     { ?>
+      <h2 class="nomDeSectionPhoto"><?php echo $uneSection->nom_section; ?></h2>
+          <?php
+
+            $idSection = $uneSection->id_section;
+            $lesImages = $cnx->query("SELECT * FROM image WHERE id_section =".$idSection);
+            $lesImages->setFetchMode(PDO::FETCH_OBJ); ?>
+            <div class="divImageGallerie">
+            <?php while($uneImage = $lesImages->fetch())
+              { ?>
+                <img class="imageGallerie" src="imageGallerie/<?php echo $uneImage->nom_image; ?>">
+            <?php }
+            ?> </div> <?php
+     } ?>
+
+
 
 
 

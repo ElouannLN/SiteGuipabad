@@ -1040,7 +1040,39 @@ height: auto;
 }
 
 /*----------------------------------------------------------------------------*/
-/*PAGE Galerie*/
+/*PAGE Archives*/
+/*----------------------------------------------------------------------------*/
+
+.nomDeSectionPhoto
+{
+ width: 30%;
+ color: white;
+ background-color: rgb(105, 133, 198);
+ font-size: 25px;
+ text-align: center;
+ padding-top: 0.5%;
+ padding-bottom: 0.5%;
+ border-top: 1vh double white;
+ border-bottom: 1vh double white;
+ border-radius: 0 10px 10px 0;
+}
+
+.divImageGallerie
+{
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.imageGallerie
+{
+  width: 10%;
+  height:auto;
+  border-radius: 10px 10px 10px 10px;
+  margin: 1px;
+}
+
+/*----------------------------------------------------------------------------*/
+/*PAGE Chat*/
 /*----------------------------------------------------------------------------*/
 
 .imageLightBox
@@ -1049,10 +1081,6 @@ height: auto;
   max-width: 90vw;
   max-height: 90vh;
 }
-
-/*----------------------------------------------------------------------------*/
-/*PAGE Chat*/
-/*----------------------------------------------------------------------------*/
 
 .chatFenetre
 {
