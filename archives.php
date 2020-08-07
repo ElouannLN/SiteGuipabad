@@ -43,7 +43,10 @@
     </form>
 
     <?php
-     $lesSections = $cnx->query("SELECT * FROM section");
+     $lesSections = $cnx->query("SELECT * FROM section INNER JOIN image
+       ON section.id_section = image.id_section
+       GROUP BY section.id_section
+       HAVING COUNT(image.id_image) > 0");
      $lesSections->setFetchMode(PDO::FETCH_OBJ);
      while ($uneSection = $lesSections->fetch())
      { ?>
@@ -60,61 +63,6 @@
             <?php }
             ?> </div> <?php
      } ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <h1 class="titrePage">Page des Archives | Presse</h1>
 
       <script type="text/javascript" scr="include/script.js"></script>
