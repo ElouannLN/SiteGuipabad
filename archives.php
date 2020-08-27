@@ -16,31 +16,10 @@
 
     <h1 class="titrePage">Page des Archives | Photos</h1>
 
-    <form class="" action="traitementsct.php" method="post">
-      <input type="text" name="nomSection">
-      <input type="submit" value="Envoyer">
-      <input type="reset" value="Supprimer">
-    </form>
-
-    <form class="" action="traitementimg.php" method="post" enctype="multipart/form-data">
-      <input type="file" name="envoiimage">
-      <select name="selectSection">
-        <?php
-          $lesSections = $cnx->query("SELECT * FROM section");
-          $lesSections->setFetchMode(PDO::FETCH_OBJ);
-          while($uneSection = $lesSections->fetch())
-          { ?>
-            <option value="<?php echo $uneSection->id_section; ?>">
-              <?php echo $uneSection->nom_section; ?>
-            </option>
-            <?php
-          }
-         ?>
-      </select>
-      <input type="submit" value="Envoyer">
-      <input type="reset" value="Supprimer">
-      <input type="hidden" name="MAX_FILE_SIZE" value="5000000" />
-    </form>
+    <div class="adminPageArchives">
+      <?php include("include/formAjoutSection.php");?>
+      <?php include("include/formAjoutPhoto.php");?>
+    </div>
 
     <?php
      $lesSections = $cnx->query("SELECT * FROM section INNER JOIN image
